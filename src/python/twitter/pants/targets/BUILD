@@ -2,11 +2,11 @@
 python_library(
   name = 'all',
   dependencies = [
-    pants(':common'),
-    pants(':jvm'),
-    pants(':java'),
-    pants(':python'),
-    pants(':scala'),
+    ':common',
+    ':jvm',
+    ':java',
+    ':python',
+    ':scala',
   ],
 )
 
@@ -25,14 +25,14 @@ python_library(
     'with_sources.py',
   ],
   dependencies = [
-    # pants(':jvm'), XXX internal.py is in :jvm, so common won't work without it.
-    pants('src/python/twitter/common/collections'),
-    pants('src/python/twitter/common/lang'),
-    pants('src/python/twitter/pants/base:address'),
-    pants('src/python/twitter/pants/base:build_environment'),
-    pants('src/python/twitter/pants/base:build_manual'),
-    pants('src/python/twitter/pants/base:parse_context'),
-    pants('src/python/twitter/pants/base:target'),
+    # ':jvm', XXX internal.py is in :jvm, so common won't work without it.
+    'src/python/twitter/common/collections',
+    'src/python/twitter/common/lang',
+    'src/python/twitter/pants/base:address',
+    'src/python/twitter/pants/base:build_environment',
+    'src/python/twitter/pants/base:build_manual',
+    'src/python/twitter/pants/base:parse_context',
+    'src/python/twitter/pants/base:target',
   ],
 )
 
@@ -52,13 +52,13 @@ python_library(
     'jvm_target.py',
   ],
   dependencies = [
-    pants(':common'),
-    pants('src/python/twitter/common/collections'),
-    pants('src/python/twitter/common/dirutil'),
-    pants('src/python/twitter/common/lang'),
-    pants('src/python/twitter/pants/base:build_manual'),
-    pants('src/python/twitter/pants/base:parse_context'),
-    pants('src/python/twitter/pants/base:target'),
+    ':common',
+    'src/python/twitter/common/collections',
+    'src/python/twitter/common/dirutil',
+    'src/python/twitter/common/lang',
+    'src/python/twitter/pants/base:build_manual',
+    'src/python/twitter/pants/base:parse_context',
+    'src/python/twitter/pants/base:target',
   ],
 )
 
@@ -74,12 +74,12 @@ python_library(
     'java_thrift_library.py',
   ],
   dependencies = [
-    pants(':common'),
-    pants(':jvm'),
-    pants('src/python/twitter/common/collections'),
-    pants('src/python/twitter/common/lang'),
-    pants('src/python/twitter/pants/base:build_manual'),
-    pants('src/python/twitter/pants/base:target'),
+    ':common',
+    ':jvm',
+    'src/python/twitter/common/collections',
+    'src/python/twitter/common/lang',
+    'src/python/twitter/pants/base:build_manual',
+    'src/python/twitter/pants/base:target',
   ],
 )
 
@@ -91,11 +91,11 @@ python_library(
     'scalac_plugin.py',
   ],
   dependencies = [
-    pants(':common'),
-    pants(':jvm'),
-    pants('src/python/twitter/common/collections'),
-    pants('src/python/twitter/pants/base:build_manual'),
-    pants('src/python/twitter/pants/base:target'),
+    ':common',
+    ':jvm',
+    'src/python/twitter/common/collections',
+    'src/python/twitter/pants/base:build_manual',
+    'src/python/twitter/pants/base:target',
   ],
 )
 
@@ -113,14 +113,14 @@ python_library(
     'python_thrift_library.py',
   ],
   dependencies = [
-    pants('3rdparty/python:setuptools'),
-    pants(':common'),
-    pants('src/python/twitter/common/collections'),
-    pants('src/python/twitter/common/lang'),
-    pants('src/python/twitter/common/python'),
-    pants('src/python/twitter/common/quantity'),
-    pants('src/python/twitter/pants/base:build_manual'),
-    pants('src/python/twitter/pants/base:parse_context'),
-    pants('src/python/twitter/pants/base:target'),
+    '3rdparty/python:setuptools',
+    ':common',
+    'src/python/twitter/common/collections',
+    'src/python/twitter/common/lang',
+    'src/python/twitter/common/python',
+    'src/python/twitter/common/quantity',
+    'src/python/twitter/pants/base:build_manual',
+    'src/python/twitter/pants/base:parse_context',
+    'src/python/twitter/pants/base:target',
   ],
 )

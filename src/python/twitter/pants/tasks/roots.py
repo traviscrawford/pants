@@ -1,4 +1,4 @@
-from twitter.pants.targets.sources import SourceRoot
+from twitter.pants.base.source_root import SourceRoot
 
 from .console_task import ConsoleTask
 

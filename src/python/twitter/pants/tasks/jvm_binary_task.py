@@ -103,5 +103,5 @@ class JvmBinaryTask(Task):
             else:
               self.context.log.debug('Excluding %s from binary' % externaljar)
 
-    binary.walk(add_jars, lambda t: t.is_internal)
+    binary.walk(add_jars)
     return externaljars

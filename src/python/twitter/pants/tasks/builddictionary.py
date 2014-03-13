@@ -18,9 +18,8 @@ import inspect
 import os
 
 from twitter.common.dirutil import Fileset, safe_open
-from twitter.pants.base.build_file_helpers import maven_layout
+from twitter.pants.base.build_file_aliases import maven_layout
 from twitter.pants.base.build_manual import get_builddict_info
-from twitter.pants.base.parse_context import ParseContext
 from twitter.pants.base.generator import Generator, TemplateData
 from twitter.pants.goal.phase import Phase
 from twitter.pants.tasks import Task, TaskError
@@ -133,7 +132,7 @@ PREDEFS = {  # some hardwired entries
                   """Old name for `dependencies`_""")},
   "java_tests": {"defn": msg_entry("java_tests",
                   """Old name for `junit_tests`_""")},
-  "maven_layout": {"defn": entry_for_one("maven_layout", maven_layout)},
+  # "maven_layout": {"defn": entry_for_one("maven_layout", maven_layout)},
   "python_artifact": {"suppress": True}, # unused alias for PythonArtifact
   "rglobs": {"defn": entry_for_one("rglobs", Fileset.rglobs)},
   "ROOT_DIR": {"defn": msg_entry("ROOT_DIR",

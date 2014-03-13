@@ -26,7 +26,6 @@ from twitter.common.python.pex_builder import PEXBuilder
 
 from twitter.pants.base.address import Address
 from twitter.pants.base.config import Config
-from twitter.pants.base.parse_context import ParseContext
 from twitter.pants.base.target import Target
 from twitter.pants.commands.command import Command
 from twitter.pants.python.interpreter_cache import PythonInterpreterCache
@@ -77,8 +76,7 @@ class Py(Command):
     self.interpreter = interpreters[0]
 
     for req in self.options.extra_requirements:
-      with ParseContext.temp():
-        self.extra_targets.append(PythonRequirement(req, use_2to3=True))
+      self.extra_targets.append(PythonRequirement(req, use_2to3=True))
 
     # We parse each arg in the context of the cli usage:
     #   ./pants command (options) [spec] (build args)
@@ -164,9 +162,8 @@ class Py(Command):
 
       requirements = self.config.getlist('python-ipython', 'requirements', default=[])
 
-      with ParseContext.temp():
-        for requirement in requirements:
-          self.extra_targets.append(PythonRequirement(requirement))
+      for requirement in requirements:
+        self.extra_targets.append(PythonRequirement(requirement))
 
     executor = PythonChroot(
         self.target,

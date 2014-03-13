@@ -25,6 +25,7 @@ from twitter.common.contextutil import temporary_dir
 from twitter.common.dirutil import safe_open, safe_rmtree
 
 from twitter.pants.base.context_utils import create_context
+from twitter.pants.base.source_root import SourceRoot
 from twitter.pants.base_build_root_test import BaseBuildRootTest
 from twitter.pants.goal.products import MultipleRootedProducts
 from twitter.pants.java.jar import open_jar
@@ -32,7 +33,6 @@ from twitter.pants.targets.java_library import JavaLibrary
 from twitter.pants.targets.java_thrift_library import JavaThriftLibrary
 from twitter.pants.targets.resources import Resources
 from twitter.pants.targets.scala_library import ScalaLibrary
-from twitter.pants.targets.sources import SourceRoot
 from twitter.pants.tasks.jar_create import is_jvm_library, JarCreate
 
 

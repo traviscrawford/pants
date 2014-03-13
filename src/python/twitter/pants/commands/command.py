@@ -18,7 +18,10 @@ from __future__ import print_function
 
 from twitter.common.collections import OrderedSet
 from twitter.pants.base.build_file import BuildFile
+from twitter.pants.base.build_file_parser import BuildFileParser
+from twitter.pants.base.config import Config
 from twitter.pants.base.target import Target
+from twitter.pants.graph.build_graph import BuildGraph
 
 
 class Command(object):
@@ -63,6 +66,37 @@ class Command(object):
     args: the subcommand arguments to parse"""
     self.run_tracker = run_tracker
     self.root_dir = root_dir
+
+    # TODO(pl): Gross that we're doing a local import here, but this has dependendencies
+    # way down into specific Target subclasses, and I'd prefer to make it explicit that this
+    # import is in many ways similar to to third party plugin imports below.
+    from twitter.pants.base.build_file_aliases import (target_aliases, object_aliases,
+                                                       applicative_path_relative_util_aliases,
+                                                       partial_path_relative_util_aliases)
+    for alias, target_type in target_aliases.items():
+      BuildFileParser.register_target_alias(alias, target_type)
+
+    for alias, obj in object_aliases.items():
+      BuildFileParser.register_exposed_object(alias, obj)
+
+    for alias, util in applicative_path_relative_util_aliases.items():
+      BuildFileParser.register_applicative_path_relative_util(alias, util)
+
+    for alias, util in partial_path_relative_util_aliases.items():
+      BuildFileParser.register_partial_path_relative_util(alias, util)
+
+    config = Config.load()
+
+    # TODO(pl): This is awful but I need something quick and dirty to support
+    # injection of third party Targets and tools into BUILD file context
+    plugins = config.getlist('plugins', 'entry_points', default=[])
+    for entry_point_spec in plugins:
+      module, entry_point = entry_point_spec.split(':')
+      plugin_module = __import__(module, globals(), locals(), [entry_point], 0)
+      getattr(plugin_module, entry_point)(config)
+
+    self.build_file_parser = BuildFileParser(root_dir=self.root_dir, run_tracker=self.run_tracker)
+    self.build_graph = BuildGraph(run_tracker=self.run_tracker)
 
     # Override the OptionParser's error with more useful output
     def error(message=None, show_help=True):

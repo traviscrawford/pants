@@ -15,14 +15,12 @@
 # ==================================================================================================
 
 from twitter.pants.base.build_manual import manual
-
-from . import util
-from .internal import InternalTarget
-from .with_sources import TargetWithSources
+from twitter.pants.base.payload import ResourcesPayload
+from twitter.pants.base.target import Target
 
 
 @manual.builddict(tags=['jvm'])
-class Resources(InternalTarget, TargetWithSources):
+class Resources(Target):
   """A set of files accessible as resources from the JVM classpath.
 
   Looking for loose files in your application bundle? Those are :ref:`bdict_bundle`\ s.
@@ -31,16 +29,19 @@ class Resources(InternalTarget, TargetWithSources):
   and friends API. In the ``jar`` goal, the resource files are placed in the resulting `.jar`.
   """
 
-  def __init__(self, name, sources, exclusives=None):
+  def __init__(self, sources=None, **kwargs):
     """
     :param string name: The name of this target, which combined with this
       build file defines the target :class:`twitter.pants.base.address.Address`.
     :param sources: A list of filenames representing the resources
       this library provides.
     """
-    # TODO(John Sirois): XXX Review why this is an InternalTarget
-    InternalTarget.__init__(self, name, dependencies=None, exclusives=exclusives)
-    TargetWithSources.__init__(self, name, sources=sources, exclusives=exclusives)
+    payload = ResourcesPayload(resources=sources)
+    super(Resources, self).__init__(payload=payload, **kwargs)
+
+  # @property
+  # def target_base(self):
+  #   return self.address.spec_path
 
   def has_sources(self, extension=None):
     """``Resources`` never own sources of any particular native type, like for example
@@ -50,30 +51,30 @@ class Resources(InternalTarget, TargetWithSources):
     return extension is None
 
 
-class WithResources(InternalTarget):
-  """A mixin for internal targets that have resources."""
+# class WithResources(InternalTarget):
+#   """A mixin for internal targets that have resources."""
 
-  def __init__(self, *args, **kwargs):
-    super(WithResources, self).__init__(*args, **kwargs)
-    self._resources = []
-    self._raw_resources = None
+#   def __init__(self, *args, **kwargs):
+#     super(WithResources, self).__init__(*args, **kwargs)
+#     self._resources = []
+#     self._raw_resources = None
 
-  @property
-  def resources(self):
-    if self._raw_resources is not None:
-      self._resources = list(self.resolve_all(self._raw_resources, Resources))
-      self.update_dependencies(self._resources)
-      self._raw_resources = None
-    return self._resources
+#   @property
+#   def resources(self):
+#     if self._raw_resources is not None:
+#       self._resources = list(self.resolve_all(self._raw_resources, Resources))
+#       self.update_dependencies(self._resources)
+#       self._raw_resources = None
+#     return self._resources
 
-  @resources.setter
-  def resources(self, resources):
-    self._resources = []
-    self._raw_resources = util.resolve(resources)
+#   @resources.setter
+#   def resources(self, resources):
+#     self._resources = []
+#     self._raw_resources = util.resolve(resources)
 
-  def resolve(self):
-    # TODO(John Sirois): Clean this up when BUILD parse refactoring is tackled.
-    unused_resolved_resources = self.resources
+#   def resolve(self):
+#     # TODO(John Sirois): Clean this up when BUILD parse refactoring is tackled.
+#     unused_resolved_resources = self.resources
 
-    for resolved in super(WithResources, self).resolve():
-      yield resolved
+#     for resolved in super(WithResources, self).resolve():
+#       yield resolved

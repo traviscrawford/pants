@@ -16,7 +16,6 @@
 
 from twitter.pants.base.address import Address
 from twitter.pants.base.build_manual import manual
-from twitter.pants.base.parse_context import ParseContext
 from twitter.pants.base.target import Target, TargetDefinitionException
 
 

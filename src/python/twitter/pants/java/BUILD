@@ -3,10 +3,10 @@ python_library(
   sources = globs('distribution/*.py'),
   resources = globs('distribution/*.class'),
   dependencies = [
-    pants('src/python/twitter/common/contextutil'),
-    pants('src/python/twitter/common/lang'),
-    pants('src/python/twitter/common/log'),
-    pants('src/python/twitter/pants/base:revision'),
+    'src/python/twitter/common/contextutil',
+    'src/python/twitter/common/lang',
+    'src/python/twitter/common/log',
+    'src/python/twitter/pants/base:revision',
   ]
 )
 
@@ -14,11 +14,11 @@ python_library(
   name = 'executor',
   sources = ['executor.py'],
   dependencies = [
-    pants(':distribution'),
-    pants('src/python/twitter/common/collections'),
-    pants('src/python/twitter/common/contextutil'),
-    pants('src/python/twitter/common/lang'),
-    pants('src/python/twitter/common/log'),
+    ':distribution',
+    'src/python/twitter/common/collections',
+    'src/python/twitter/common/contextutil',
+    'src/python/twitter/common/lang',
+    'src/python/twitter/common/log',
   ]
 )
 
@@ -26,8 +26,8 @@ python_library(
   name = 'jar',
   sources = globs('jar/*.py'),
   dependencies = [
-    pants('src/python/twitter/common/contextutil'),
-    pants('src/python/twitter/common/lang'),
+    'src/python/twitter/common/contextutil',
+    'src/python/twitter/common/lang',
   ]
 )
 
@@ -40,13 +40,13 @@ python_library(
   name = 'nailgun_executor',
   sources = ['nailgun_executor.py'],
   dependencies = [
-    pants('3rdparty/python:psutil'),
-    pants(':nailgun_client'),
-    pants('src/python/twitter/common/collections'),
-    pants('src/python/twitter/common/dirutil'),
-    pants('src/python/twitter/common/lang'),
-    pants('src/python/twitter/common/log'),
-    pants('src/python/twitter/pants/base:build_environment'),
+    '3rdparty/python:psutil',
+    ':nailgun_client',
+    'src/python/twitter/common/collections',
+    'src/python/twitter/common/dirutil',
+    'src/python/twitter/common/lang',
+    'src/python/twitter/common/log',
+    'src/python/twitter/pants/base:build_environment',
   ],
 )
 
@@ -54,9 +54,9 @@ python_library(
   name = 'util',
   sources = ['util.py'],
   dependencies = [
-    pants(':executor'),
-    pants(':nailgun_executor'),
-    pants('src/python/twitter/pants/base:workunit'),
+    ':executor',
+    ':nailgun_executor',
+    'src/python/twitter/pants/base:workunit',
   ],
 )
 
