@@ -2,9 +2,9 @@ python_library(
   name = 'net',
   sources = rglobs('*.py'),
   dependencies = [
-    'src/python/twitter/common/dirutil',
-    'src/python/twitter/common/lang',
-    'src/python/twitter/common/quantity',
-    '3rdparty/python:requests',
+    pants('src/python/twitter/common/dirutil'),
+    pants('src/python/twitter/common/lang'),
+    pants('src/python/twitter/common/quantity'),
+    pants('3rdparty/python:requests'),
   ],
 )

@@ -18,6 +18,10 @@
 from twitter.pants.base.build_manual import manual
 from twitter.pants.base.target import Target
 
+from .internal import InternalTarget
+from .pants_target import Pants
+from .with_sources import TargetWithSources
+
 
 class Wiki(Target):
   """Target that identifies a wiki where pages can be published."""
@@ -33,10 +37,10 @@ class Wiki(Target):
     self.url_builder = url_builder
 
 
-class Page(Target):
+class Page(InternalTarget, TargetWithSources):
   """Describes a single documentation page."""
 
-  def __init__(self, resources=None, **kwargs):
+  def __init__(self, name, source, dependencies=None, resources=None, exclusives=None):
     """
     :param string name: The name of this target, which combined with this
       build file defines the target :class:`twitter.pants.base.address.Address`.
@@ -46,9 +50,8 @@ class Page(Target):
     :type dependencies: list of targets
     :param resources: An optional list of Resources objects.
     """
-
-    payload = None
-    super(Page, self).__init__(**kwargs)
+    InternalTarget.__init__(self, name, dependencies, exclusives=exclusives)
+    TargetWithSources.__init__(self, name, sources=[source], exclusives=exclusives)
 
     self.resources = self._resolve_paths(resources) if resources else []
     self._wikis = {}

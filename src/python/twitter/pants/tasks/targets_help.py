@@ -22,7 +22,7 @@ import textwrap
 from string import Template
 
 from twitter.pants.base.target import Target
-from twitter.pants.base.source_root import SourceRoot
+from twitter.pants.targets.sources import SourceRoot
 from twitter.pants.tasks.console_task import ConsoleTask
 
 

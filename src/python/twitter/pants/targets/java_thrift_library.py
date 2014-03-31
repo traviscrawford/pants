@@ -24,6 +24,7 @@ from twitter.pants.base.target import TargetDefinitionException
 
 from .jar_dependency import JarDependency
 from .jvm_target import JvmTarget
+from .pants_target import Pants
 
 
 @manual.builddict(tags=['java'])
@@ -41,11 +42,16 @@ class JavaThriftLibrary(JvmTarget):
   _RPC_STYLE_DEFAULT = 'sync'
 
   def __init__(self,
+               name,
+               sources,
+               provides=None,
+               dependencies=None,
+               excludes=None,
                compiler=_COMPILER_DEFAULT,
                language=_LANGUAGE_DEFAULT,
                rpc_style=_RPC_STYLE_DEFAULT,
                namespace_map=None,
-               **kwargs):
+               exclusives=None):
     """
     :param string name: The name of this target, which combined with this
       build file defines the target :class:`twitter.pants.base.address.Address`.
@@ -71,12 +77,23 @@ class JavaThriftLibrary(JvmTarget):
 
     # It's critical that provides is set 1st since _provides() is called elsewhere in the
     # constructor flow.
-    # TODO(pl): Above is defunct?
-    # self._provides = provides
+    self._provides = provides
 
-    super(JavaThriftLibrary, self).__init__(**kwargs)
+    super(JavaThriftLibrary, self).__init__(
+        name,
+        sources,
+        dependencies,
+        excludes,
+        exclusives=exclusives)
 
     self.add_labels('codegen')
+
+    if dependencies:
+      if not isinstance(dependencies, Iterable):
+        raise TargetDefinitionException(self,
+                                        'dependencies must be Iterable but was: %s' % dependencies)
+      maybe_list(dependencies, expected_type=(JarDependency, JavaThriftLibrary, Pants),
+                 raise_type=partial(TargetDefinitionException, self))
 
     def check_value_for_arg(arg, value, values):
       if value not in values:
@@ -102,6 +119,6 @@ class JavaThriftLibrary(JvmTarget):
   def is_thrift(self):
     return True
 
-  # @property
-  # def provides(self):
-  #   return self._provides
+  @property
+  def provides(self):
+    return self._provides

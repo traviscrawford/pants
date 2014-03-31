@@ -204,7 +204,8 @@ class Task(object):
     cache_manager = CacheManager(self._cache_key_generator,
                                  self._build_invalidator_dir,
                                  invalidate_dependents,
-                                 extra_data)
+                                 extra_data,
+                                 only_externaldeps=only_buildfiles)
 
     invalidation_check = cache_manager.check(targets, partition_size_hint)
 
@@ -230,17 +231,17 @@ class Task(object):
 
     if not silent:
       targets = []
-      payloads = []
+      sources = []
       num_invalid_partitions = len(invalidation_check.invalid_vts_partitioned)
       for vt in invalidation_check.invalid_vts_partitioned:
         targets.extend(vt.targets)
-        payloads.extend(vt.cache_key.payloads)
+        sources.extend(vt.cache_key.sources)
       if len(targets):
         msg_elements = ['Invalidated ',
                         items_to_report_element([t.address.reference() for t in targets], 'target')]
-        if len(payloads) > 0:
+        if len(sources) > 0:
           msg_elements.append(' containing ')
-          msg_elements.append(items_to_report_element(payloads, 'payload file'))
+          msg_elements.append(items_to_report_element(sources, 'source file'))
         if num_invalid_partitions > 1:
           msg_elements.append(' in %d target partitions' % num_invalid_partitions)
         msg_elements.append('.')
@@ -345,6 +346,7 @@ class Task(object):
 
   def ivy_resolve(self, targets, executor=None, symlink_ivyxml=False, silent=False,
                   workunit_name=None, workunit_labels=None):
+
     if executor and not isinstance(executor, Executor):
       raise ValueError('The executor must be an Executor instance, given %s of type %s'
                        % (executor, type(executor)))
@@ -362,6 +364,7 @@ class Task(object):
                          log=self.context.log)
 
     with self.invalidated(targets,
+                          only_buildfiles=True,
                           invalidate_dependents=True,
                           silent=silent) as invalidation_check:
       global_vts = VersionedTargetSet.from_versioned_targets(invalidation_check.all_vts)
@@ -378,7 +381,6 @@ class Task(object):
       # Note that it's possible for all targets to be valid but for no classpath file to exist at
       # target_classpath_file, e.g., if we previously built a superset of targets.
       if invalidation_check.invalid_vts or not os.path.exists(raw_target_classpath_file):
-        # import pdb; pdb.set_trace()
         args = ['-cachepath', raw_target_classpath_file_tmp]
 
         def exec_ivy():

@@ -21,6 +21,8 @@ from twitter.pants.base.build_manual import manual
 
 from .pants_target import Pants
 from .repository import Repository
+from .util import resolve
+
 
 @manual.builddict(tags=["jvm"])
 class Artifact(object):
@@ -44,6 +46,12 @@ class Artifact(object):
 
     if repo is None:
       raise ValueError("repo must be supplied")
+    repos = []
+    for tgt in maybe_list(resolve(repo), expected_type=(Pants, Repository)):
+      repos.extend(tgt.resolve())
+    if len(repos) != 1:
+      raise ValueError("An artifact must have exactly 1 repo, given: %s" % repos)
+    repo = repos[0]
 
     if description is not None and not isinstance(description, Compatibility.string):
       raise ValueError("description must be None or %s but was %s"

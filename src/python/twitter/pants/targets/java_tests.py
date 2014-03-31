@@ -17,13 +17,20 @@
 from twitter.pants.base.build_manual import manual
 
 from .jvm_target import JvmTarget
+from .resources import WithResources
 
 
 @manual.builddict(tags=['jvm'])
-class JavaTests(JvmTarget):
+class JavaTests(JvmTarget, WithResources):
   """Tests JVM sources with JUnit."""
 
-  def __init__(self, **kwargs):
+  def __init__(self,
+               name,
+               sources=None,
+               dependencies=None,
+               excludes=None,
+               resources=None,
+               exclusives=None):
     """
    :param string name: The name of this target, which combined with this
      build file defines the target :class:`twitter.pants.base.address.Address`.
@@ -42,9 +49,9 @@ class JavaTests(JvmTarget):
      file resources to place in this module's jar.
    :param exclusives: An optional map of exclusives tags. See CheckExclusives for details.
    """
-    super(JavaTests, self).__init__(**kwargs)
+    super(JavaTests, self).__init__(name, sources, dependencies, excludes, exclusives=exclusives)
 
-    # self.resources = resources
+    self.resources = resources
 
     # TODO(John Sirois): These could be scala, clojure, etc.  'jvm' and 'tests' are the only truly
     # applicable labels - fixup the 'java' misnomer.

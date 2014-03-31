@@ -17,7 +17,7 @@
 dependencies(
   name = 'pants',
   dependencies = [
-    'src/python/twitter/pants/bin:pants',
+    pants('src/python/twitter/pants/bin:pants'),
   ],
 ).with_description('An alias for the pants binary target.')
 
@@ -41,8 +41,8 @@ python_library(
     ]
   ).with_binaries(
     # TODO(John Sirois): Switch back when target cycles have been sorted out.
-    # pants='src/python/twitter/pants/bin:pants',
-    pants=':_pants_transitional_publishable_binary_',
+    # pants=pants('src/python/twitter/pants/bin:pants'),
+    pants=pants(':_pants_transitional_publishable_binary_'),
   )
 )
 
@@ -55,12 +55,12 @@ python_library(
   name = 'binary_util',
   sources = ['binary_util.py'],
   dependencies = [
-    'src/python/twitter/common/contextutil',
-    'src/python/twitter/common/dirutil',
-    'src/python/twitter/common/lang',
-    'src/python/twitter/common/log',
-    'src/python/twitter/pants/base:config',
-    'src/python/twitter/pants/tasks:task_error',
+    pants('src/python/twitter/common/contextutil'),
+    pants('src/python/twitter/common/dirutil'),
+    pants('src/python/twitter/common/lang'),
+    pants('src/python/twitter/common/log'),
+    pants('src/python/twitter/pants/base:config'),
+    pants('src/python/twitter/pants/tasks:task_error'),
   ],
 )
 
@@ -68,6 +68,6 @@ python_library(
   name = 'thrift_util',
   sources = ['thrift_util.py'],
   dependencies = [
-    ':binary_util',
+    pants(':binary_util'),
   ],
 )

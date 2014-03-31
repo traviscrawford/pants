@@ -51,13 +51,12 @@ class Provides(Task):
     self.also_write_to_stdout = context.options.provides_also_write_to_stdout or False
     # Create a fake target, in case we were run directly on a JarLibrary containing nothing but JarDependencies.
     # TODO(benjy): Get rid of this special-casing of jar dependencies.
-    # TODO(pl): Is this necessary?  Now JarLibrary only contains a payload of JarDependency
-    # context.add_new_target(self.workdir,
-    #   JvmBinary,
-    #   name='provides',
-    #   dependencies=self.target_roots,
-    #   configurations=self.confs)
-    # context.products.require('jars')
+    context.add_new_target(self.workdir,
+      JvmBinary,
+      name='provides',
+      dependencies=self.target_roots,
+      configurations=self.confs)
+    context.products.require('jars')
 
   def execute(self, targets):
     for conf in self.confs:

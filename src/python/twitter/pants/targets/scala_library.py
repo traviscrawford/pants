@@ -19,12 +19,14 @@ from twitter.common.collections import maybe_list
 from twitter.pants.base.build_manual import manual
 from twitter.pants.base.target import Target, TargetDefinitionException
 
+from . import util
 from .exportable_jvm_library import ExportableJvmLibrary
 from .java_library import JavaLibrary
+from .resources import WithResources
 
 
 @manual.builddict(tags=['scala'])
-class ScalaLibrary(ExportableJvmLibrary):
+class ScalaLibrary(ExportableJvmLibrary, WithResources):
   """A collection of Scala code.
 
   Normally has conceptually-related sources; invoking the ``compile`` goal
@@ -34,7 +36,15 @@ class ScalaLibrary(ExportableJvmLibrary):
   more sensible thing to bundle.
   """
 
-  def __init__(self, *args, **kwargs):
+  def __init__(self,
+               name,
+               sources=None,
+               java_sources=None,
+               provides=None,
+               dependencies=None,
+               excludes=None,
+               resources=None,
+               exclusives=None):
     """
     :param string name: The name of this target, which combined with this
       build file defines the target :class:`twitter.pants.base.address.Address`.
@@ -57,39 +67,44 @@ class ScalaLibrary(ExportableJvmLibrary):
       targets containing resources that belong on this library's classpath.
     :param exclusives: An optional list of exclusives tags.
     """
-    super(ScalaLibrary, self).__init__(*args, **kwargs)
+    super(ScalaLibrary, self).__init__(
+        name,
+        sources,
+        provides,
+        dependencies,
+        excludes,
+        exclusives=exclusives)
 
-    # if (sources is None) and (resources is None):
-    #   raise TargetDefinitionException(self, 'Must specify sources and/or resources.')
+    if (sources is None) and (resources is None):
+      raise TargetDefinitionException(self, 'Must specify sources and/or resources.')
 
-    # self.resources = resources
+    self.resources = resources
 
-    # self._java_sources = []
-    # self._raw_java_sources = util.resolve(java_sources)
+    self._java_sources = []
+    self._raw_java_sources = util.resolve(java_sources)
 
     self.add_labels('scala')
 
   @property
   def java_sources(self):
-    return [source for source in self.payload.sources if source.endswith('.java')]
-    # if self._raw_java_sources is not None:
-    #   self._java_sources = list(Target.resolve_all(maybe_list(self._raw_java_sources, Target),
-    #                                                JavaLibrary))
+    if self._raw_java_sources is not None:
+      self._java_sources = list(Target.resolve_all(maybe_list(self._raw_java_sources, Target),
+                                                   JavaLibrary))
 
-    #   self._raw_java_sources = None
+      self._raw_java_sources = None
 
-    #   # TODO(John Sirois): reconsider doing this auto-linking.
-    #   # We have circular java/scala dep, add an inbound dependency edge from java to scala in this
-    #   # case to force scala compilation to precede java - since scalac supports generating java
-    #   # stubs for these cycles and javac does not this is both necessary and always correct.
-    #   for java_target in self._java_sources:
-    #     java_target.update_dependencies([self])
-    # return self._java_sources
+      # TODO(John Sirois): reconsider doing this auto-linking.
+      # We have circular java/scala dep, add an inbound dependency edge from java to scala in this
+      # case to force scala compilation to precede java - since scalac supports generating java
+      # stubs for these cycles and javac does not this is both necessary and always correct.
+      for java_target in self._java_sources:
+        java_target.update_dependencies([self])
+    return self._java_sources
 
-  # def resolve(self):
-  #   # TODO(John Sirois): Clean this up when BUILD parse refactoring is tackled.
-  #   unused_resolved_java_sources = self.java_sources
+  def resolve(self):
+    # TODO(John Sirois): Clean this up when BUILD parse refactoring is tackled.
+    unused_resolved_java_sources = self.java_sources
 
-  #   for resolved in super(ScalaLibrary, self).resolve():
-  #     yield resolved
+    for resolved in super(ScalaLibrary, self).resolve():
+      yield resolved
 

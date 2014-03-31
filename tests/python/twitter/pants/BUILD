@@ -18,11 +18,11 @@ python_library(
   name = 'base-test',
   sources = ['base_build_root_test.py'],
   dependencies = [
-    'src/python/twitter/common/dirutil',
-    'src/python/twitter/pants/base:address',
-    'src/python/twitter/pants/base:build_root',
-    'src/python/twitter/pants/base:target',
-    'src/python/twitter/pants/targets:common',
+    pants('src/python/twitter/common/dirutil'),
+    pants('src/python/twitter/pants/base:address'),
+    pants('src/python/twitter/pants/base:build_root'),
+    pants('src/python/twitter/pants/base:target'),
+    pants('src/python/twitter/pants/targets:common'),
   ]
 )
 
@@ -30,7 +30,7 @@ python_tests(
   name = 'test_maven_layout',
   sources = ['test_maven_layout.py'],
   dependencies = [
-    ':base-test',
+    pants(':base-test'),
   ]
 )
 
@@ -38,31 +38,31 @@ python_tests(
   name = 'test_thrift_util',
   sources = ['test_thrift_util.py'],
   dependencies = [
-    ':base-test',
-    'src/python/twitter/common/contextutil',
-    'src/python/twitter/common/dirutil',
-    'src/python/twitter/common/lang',
-    'src/python/twitter/pants:thrift_util',
+    pants(':base-test'),
+    pants('src/python/twitter/common/contextutil'),
+    pants('src/python/twitter/common/dirutil'),
+    pants('src/python/twitter/common/lang'),
+    pants('src/python/twitter/pants:thrift_util'),
   ]
 )
 
 python_test_suite(
   name = 'all',
   dependencies = [
-    ':test_maven_layout',
-    ':test_thrift_util',
-    'tests/python/twitter/pants/base',
-    'tests/python/twitter/pants/cache',
-    'tests/python/twitter/pants/commands',
-    'tests/python/twitter/pants/engine',
-    'tests/python/twitter/pants/fs',
-    'tests/python/twitter/pants/java',
-    'tests/python/twitter/pants/net',
-    'tests/python/twitter/pants/process',
-    'tests/python/twitter/pants/python',
-    'tests/python/twitter/pants/reporting',
-    'tests/python/twitter/pants/scm',
-    'tests/python/twitter/pants/targets',
-    'tests/python/twitter/pants/tasks',
+    pants(':test_maven_layout'),
+    pants(':test_thrift_util'),
+    pants('tests/python/twitter/pants/base'),
+    pants('tests/python/twitter/pants/cache'),
+    pants('tests/python/twitter/pants/commands'),
+    pants('tests/python/twitter/pants/engine'),
+    pants('tests/python/twitter/pants/fs'),
+    pants('tests/python/twitter/pants/java'),
+    pants('tests/python/twitter/pants/net'),
+    pants('tests/python/twitter/pants/process'),
+    pants('tests/python/twitter/pants/python'),
+    pants('tests/python/twitter/pants/reporting'),
+    pants('tests/python/twitter/pants/scm'),
+    pants('tests/python/twitter/pants/targets'),
+    pants('tests/python/twitter/pants/tasks'),
   ]
 )

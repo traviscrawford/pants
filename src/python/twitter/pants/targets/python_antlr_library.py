@@ -17,6 +17,7 @@
 from twitter.common.collections import OrderedSet
 from twitter.pants.base.build_manual import manual
 from twitter.pants.targets.python_target import PythonTarget
+from twitter.pants.targets.pants_target import Pants
 
 
 @manual.builddict(tags=["python"])

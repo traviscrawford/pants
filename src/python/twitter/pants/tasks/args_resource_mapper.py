@@ -105,7 +105,7 @@ class ArgsResourceMapper(Task):
                 self.context.log.debug('No mapping for %s' % target)
 
           if transitive:
-            target.walk(add_classnames)
+            target.walk(add_classnames, lambda t: t.is_internal)
           else:
             add_classnames(target)
 

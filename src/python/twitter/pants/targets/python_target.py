@@ -20,23 +20,28 @@ from twitter.common.collections import OrderedSet
 from twitter.common.python.interpreter import PythonIdentity
 
 from twitter.pants.base.target import Target, TargetDefinitionException
-from twitter.pants.base.payload import PythonPayload
+
+from .with_dependencies import TargetWithDependencies
+from .with_sources import TargetWithSources
+
 from twitter.pants.targets.python_artifact import PythonArtifact
 
-
-class PythonTarget(Target):
+class PythonTarget(TargetWithDependencies, TargetWithSources):
   """Base class for all Python targets."""
 
   def __init__(self,
-               sources=None,
+               name,
+               sources,
                resources=None,
-               requirements=None,
+               dependencies=None,
                provides=None,
                compatibility=None,
-               **kwargs):
-    payload = PythonPayload(sources=sources)
-    super(PythonTarget, self).__init__(payload=payload, **kwargs)
+               exclusives=None):
+    TargetWithSources.__init__(self, name, sources=sources, exclusives=exclusives)
+    TargetWithDependencies.__init__(self, name, dependencies=dependencies, exclusives=exclusives)
+
     self.add_labels('python')
+    self.resources = self._resolve_paths(resources) if resources else OrderedSet()
 
     if provides and not isinstance(provides, PythonArtifact):
       raise TargetDefinitionException(self,

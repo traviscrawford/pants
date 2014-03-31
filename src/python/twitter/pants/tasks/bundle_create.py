@@ -84,13 +84,13 @@ class BundleCreate(JvmBinaryTask):
       assert self.is_app(target), "%s is not a valid app target" % target
 
       self.binary = target if isinstance(target, JvmBinary) else target.binary
-      self.bundles = [] if isinstance(target, JvmBinary) else target.payload.bundles
+      self.bundles = [] if isinstance(target, JvmBinary) else target.bundles
       self.basename = target.basename
 
   def execute(self, _):
     archiver = archive.archiver(self.archiver_type) if self.archiver_type else None
     for target in self.context.target_roots:
-      for app in map(self.App, filter(self.App.is_app, [target])):
+      for app in map(self.App, filter(self.App.is_app, target.resolve())):
         basedir = self.bundle(app)
         if archiver:
           archivemap = self.context.products.get(self.archiver_type)
@@ -128,7 +128,7 @@ class BundleCreate(JvmBinaryTask):
               os.symlink(os.path.join(basedir, internaljar),
                          os.path.join(libdir, internaljar))
               classpath.add(internaljar)
-      app.binary.walk(add_jars)
+      app.binary.walk(add_jars, lambda t: t.is_internal)
 
       # Add external dependencies to the bundle.
       for basedir, externaljar in self.list_jar_dependencies(app.binary):

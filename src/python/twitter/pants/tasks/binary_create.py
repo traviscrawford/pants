@@ -88,7 +88,7 @@ class BinaryCreate(JvmBinaryTask):
             for internaljar in jars:
               self.dump(os.path.join(basedir, internaljar), jar)
 
-      binary.walk(add_jars)
+      binary.walk(add_jars, lambda t: t.is_internal)
 
       if self.deployjar:
         for basedir, externaljar in self.list_jar_dependencies(binary):

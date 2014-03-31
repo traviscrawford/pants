@@ -19,9 +19,14 @@ from functools import partial
 from twitter.common.collections import maybe_list, OrderedSet
 
 from twitter.pants.base.build_manual import manual
-from twitter.pants.base.payload import JarLibraryPayload
-from twitter.pants.base.target import Target
+from twitter.pants.base.target import Target, TargetDefinitionException
 
+from . import util
+from .anonymous import AnonymousDeps
+from .exclude import Exclude
+from .external_dependency import ExternalDependency
+from .exportable_jvm_library import ExportableJvmLibrary
+from .pants_target import Pants
 from .jar_dependency import JarDependency
 
 
@@ -31,28 +36,58 @@ class JarLibrary(Target):
   as if depending upon the set of dependencies directly.
   """
 
-  def __init__(self, jars=None, overrides=None, *args, **kwargs):
+  def __init__(self, name, dependencies, overrides=None, exclusives=None):
     """
     :param string name: The name of this target, which combined with this
       build file defines the target :class:`twitter.pants.base.address.Address`.
-    :param jars: List of :class:`twitter.pants.base.target.Target` instances
+    :param dependencies: List of :class:`twitter.pants.base.target.Target` instances
       this target depends on.
     :param overrides: List of strings, each of which will be recursively resolved to
       any targets that provide artifacts. Those artifacts will override corresponding
       direct/transitive dependencies in the dependencies list.
     :param exclusives: An optional map of exclusives tags. See CheckExclusives for details.
     """
-    payload = JarLibraryPayload(jars, overrides)
-    super(JarLibrary, self).__init__(payload=payload, *args, **kwargs)
+    super(JarLibrary, self).__init__(name, exclusives=exclusives)
+
+    self._pre_override_dependencies = OrderedSet(
+        maybe_list(util.resolve(dependencies),
+                   expected_type=(ExternalDependency, AnonymousDeps, Target),
+                   raise_type=partial(TargetDefinitionException, self)))
+    self._dependencies = None
+    self._dependency_addresses = None
+    self.override_targets = set(map(Pants, overrides or []))
     self.add_labels('jars')
 
   @property
-  def jar_dependencies(self):
-    return self.payload.jars
+  def dependencies(self):
+    if self._dependencies is None:
+      # compute overridden dependencies
+      self._dependencies = self._resolve_overrides()
+    return self._dependencies
+
+  @property
+  def dependency_addresses(self):
+    if self._dependency_addresses is None:
+      self._dependency_addresses = set()
+      for dependency in self.dependencies:
+        if hasattr(dependency, 'address'):
+          self._dependency_addresses.add(dependency.address)
+        # If the dependency is one that supports exclusives, the JarLibrary's
+        # exclusives should be added to it.
+        if hasattr(dependency, 'declared_exclusives'):
+          for k in self.declared_exclusives:
+            dependency.declared_exclusives[k] |= self.declared_exclusives[k]
+    return self._dependency_addresses
+
+  def resolve(self):
+    yield self
+    for dependency in self.dependencies:
+      for resolved_dependency in dependency.resolve():
+        yield resolved_dependency
 
   def _resolve_overrides(self):
     """
-    Resolves override jars, and then excludes and re-includes each of them
+    Resolves override targets, and then excludes and re-includes each of them
     to create and return a new dependency set.
     """
     if not self.override_targets:
@@ -78,3 +113,34 @@ class JarLibrary(Target):
       result.add(direct_dep)
 
     return result
+
+  def _excludes(self, dep):
+    """
+    A generator for Exclude objects that will recursively exclude all artifacts
+    provided by the given dep.
+    """
+    if isinstance(dep, JarDependency):
+      yield Exclude(dep.org, dep.name)
+    elif isinstance(dep, ExportableJvmLibrary):
+      if not dep.provides:
+        raise TargetDefinitionException(self,
+            'Targets passed to `overrides` must represent published artifacts. %s does not.' % dep)
+      yield Exclude(dep.provides.org, dep.provides.name)
+    elif isinstance(dep, JarLibrary):
+      for d in dep._pre_override_dependencies:
+        for exclude in self._excludes(d):
+          yield exclude
+
+  def _jar_dependencies(self, dep):
+    """
+    A generator for JarDependencies transitively included by the given dep.
+    """
+    if isinstance(dep, JarDependency):
+      yield dep
+    elif isinstance(dep, JarLibrary):
+      for direct_dep in dep._pre_override_dependencies:
+        for dep in self._jar_dependencies(direct_dep):
+          yield dep
+    elif isinstance(dep, Pants):
+      for d in self._jar_dependencies(dep.get()):
+        yield d

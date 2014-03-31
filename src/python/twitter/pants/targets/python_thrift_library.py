@@ -23,7 +23,12 @@ from .python_target import PythonTarget
 class PythonThriftLibrary(PythonTarget):
   """Generates a stub Python library from thrift IDL files."""
 
-  def __init__(self, **kwargs):
+  def __init__(self, name,
+               sources=None,
+               resources=None,
+               dependencies=None,
+               provides=None,
+               exclusives=None):
     """
     :param name: Name of library
     :param sources: thrift source files (If more than one tries to use the same
@@ -36,4 +41,5 @@ class PythonThriftLibrary(PythonTarget):
     :type dependencies: list of targets
     :param dict exclusives: An optional dict of exclusives tags. See CheckExclusives for details.
     """
-    super(PythonThriftLibrary, self).__init__(**kwargs)
+    super(PythonThriftLibrary, self).__init__(name, sources, resources, dependencies, provides,
+                                              exclusives=exclusives)

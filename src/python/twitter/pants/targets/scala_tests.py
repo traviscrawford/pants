@@ -17,13 +17,21 @@
 from twitter.pants.base.build_manual import manual
 
 from .jvm_target import JvmTarget
+from .resources import WithResources
 
 
 @manual.builddict(tags=['scala'])
-class ScalaTests(JvmTarget):
+class ScalaTests(JvmTarget, WithResources):
   """Tests a Scala library."""
 
-  def __init__(self, **kwargs):
+  def __init__(self,
+               name,
+               sources=None,
+               java_sources=None,
+               dependencies=None,
+               excludes=None,
+               resources=None,
+               exclusives=None):
 
     """
     :param name: The name of this module target, addressable via pants via the portion of the spec
@@ -46,12 +54,11 @@ class ScalaTests(JvmTarget):
     :param resources: An optional list of Resources that should be in this target's classpath.
     :param exclusives: An optional map of exclusives tags. See CheckExclusives for details.
     """
-    super(ScalaTests, self).__init__(**kwargs)
+    super(ScalaTests, self).__init__(name, sources, dependencies, excludes, exclusives=exclusives)
 
     # TODO(John Sirois): Merge handling with ScalaLibrary.java_sources - which is different and
     # likely more correct.
-    # TODO(pl): above is now defunct?
-    # self.java_sources = java_sources
+    self.java_sources = java_sources
 
-    # self.resources = resources
+    self.resources = resources
     self.add_labels('scala', 'tests')

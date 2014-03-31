@@ -22,6 +22,7 @@ from glob import glob as fsglob
 from zipimport import zipimporter
 
 from twitter.pants.base.build_manual import manual
+from twitter.pants.base.parse_context import ParseContext
 
 from .python_requirement import PythonRequirement
 

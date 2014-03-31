@@ -16,6 +16,7 @@
 
 from twitter.common.collections import OrderedSet
 
+from twitter.pants.base.parse_context import ParseContext
 from twitter.pants.base.target import Target, TargetDefinitionException
 from twitter.pants.targets.python_requirement import PythonRequirement
 

@@ -26,6 +26,7 @@ from twitter.pants.base.target import Target, TargetDefinitionException
 from .anonymous import AnonymousDeps
 from .external_dependency import ExternalDependency
 from .jar_dependency import JarDependency
+from .util import resolve
 
 
 class InternalTarget(Target):
@@ -82,6 +83,59 @@ class InternalTarget(Target):
       topological_sort(root)
 
     return ordered
+
+  @classmethod
+  def coalesce_targets(cls, internal_targets, discriminator):
+    """Returns a list of targets internal_targets depend on sorted from most dependent to least and
+    grouped where possible by target type as categorized by the given discriminator.
+    """
+
+    sorted_targets = filter(discriminator, cls.sort_targets(internal_targets))
+
+    # can do no better for any of these:
+    # []
+    # [a]
+    # [a,b]
+    if len(sorted_targets) <= 2:
+      return sorted_targets
+
+    # For these, we'd like to coalesce if possible, like:
+    # [a,b,a,c,a,c] -> [a,a,a,b,c,c]
+    # adopt a quadratic worst case solution, when we find a type change edge, scan forward for
+    # the opposite edge and then try to swap dependency pairs to move the type back left to its
+    # grouping.  If the leftwards migration fails due to a dependency constraint, we just stop
+    # and move on leaving "type islands".
+    current_type = None
+
+    # main scan left to right no backtracking
+    for i in range(len(sorted_targets) - 1):
+      current_target = sorted_targets[i]
+      if current_type != discriminator(current_target):
+        scanned_back = False
+
+        # scan ahead for next type match
+        for j in range(i + 1, len(sorted_targets)):
+          look_ahead_target = sorted_targets[j]
+          if current_type == discriminator(look_ahead_target):
+            scanned_back = True
+
+            # swap this guy as far back as we can
+            for k in range(j, i, -1):
+              previous_target = sorted_targets[k - 1]
+              mismatching_types = current_type != discriminator(previous_target)
+              not_a_dependency = look_ahead_target not in previous_target.internal_dependencies
+              if mismatching_types and not_a_dependency:
+                sorted_targets[k] = sorted_targets[k - 1]
+                sorted_targets[k - 1] = look_ahead_target
+              else:
+                break  # out of k
+
+            break  # out of j
+
+        if not scanned_back:  # done with coalescing the current type, move on to next
+          current_type = discriminator(current_target)
+
+    return sorted_targets
 
   def sort(self):
     """Returns a list of targets this target depends on sorted from most dependent to least."""
@@ -149,7 +203,15 @@ class InternalTarget(Target):
   def update_dependencies(self, dependencies):
     if dependencies:
       for dependency in dependencies:
+        if hasattr(dependency, 'address'):
+          self.dependency_addresses.add(dependency.address)
+        if not hasattr(dependency, "resolve"):
+          raise TargetDefinitionException(self, 'Cannot add %s as a dependency of %s'
+                                                % (dependency, self))
         for resolved_dependency in dependency.resolve():
+          if resolved_dependency.is_concrete and not self.valid_dependency(resolved_dependency):
+            raise TargetDefinitionException(self, 'Cannot add %s as a dependency of %s'
+                                                  % (resolved_dependency, self))
           self._dependencies.add(resolved_dependency)
           if isinstance(resolved_dependency, InternalTarget):
             self._internal_dependencies.add(resolved_dependency)
@@ -159,6 +221,24 @@ class InternalTarget(Target):
   def valid_dependency(self, dep):
     """Subclasses can over-ride to reject invalid dependencies."""
     return True
+
+  def replace_dependency(self, dependency, replacement):
+    self._dependencies.discard(dependency)
+    self._internal_dependencies.discard(dependency)
+    self._jar_dependencies.discard(dependency)
+    self.update_dependencies([replacement])
+
+  def _walk(self, walked, work, predicate=None):
+    Target._walk(self, walked, work, predicate)
+    for dep in self.dependencies:
+      if isinstance(dep, Target) and not dep in walked:
+        walked.add(dep)
+        if not predicate or predicate(dep):
+          additional_targets = work(dep)
+          dep._walk(walked, work, predicate)
+          if additional_targets:
+            for additional_target in additional_targets:
+              additional_target._walk(walked, work, predicate)
 
   def _propagate_exclusives(self):
     # Note: this overrides Target._propagate_exclusives without

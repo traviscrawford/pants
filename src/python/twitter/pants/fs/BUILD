@@ -2,8 +2,8 @@ python_library(
   name = 'fs',
   sources = globs('*.py'),
   dependencies = [
-    'src/python/twitter/common/collections',
-    'src/python/twitter/common/contextutil',
-    'src/python/twitter/common/lang',
+    pants('src/python/twitter/common/collections'),
+    pants('src/python/twitter/common/contextutil'),
+    pants('src/python/twitter/common/lang'),
   ]
 )
