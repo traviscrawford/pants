@@ -1,11 +1,16 @@
+# Copyright 2014 Pants project contributors (see CONTRIBUTORS.md).
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
 
-from hashlib import sha1
+from __future__ import (nested_scopes, generators, division, absolute_import, with_statement,
+                        print_function, unicode_literals)
+
 import os
+from hashlib import sha1
 
 from twitter.common.collections import OrderedSet
 from twitter.common.lang import AbstractClass
 
-from twitter.pants.base.build_environment import get_buildroot
+from pants.base.build_environment import get_buildroot
 
 
 def hash_sources(hasher, root_path, rel_path, sources):
@@ -113,7 +118,7 @@ class PythonPayload(Payload, SourcesMixin):
 class ResourcesPayload(Payload):
   def __init__(self, resources):
     self.resources = resources
-    
+
 
 class JarLibraryPayload(Payload):
   def __init__(self, jars, overrides):

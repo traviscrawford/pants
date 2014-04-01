@@ -1,9 +1,12 @@
+# Copyright 2014 Pants project contributors (see CONTRIBUTORS.md).
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
+
 python_library(
   name = 'fs',
   sources = globs('*.py'),
   dependencies = [
-    'src/python/twitter/common/collections',
-    'src/python/twitter/common/contextutil',
-    'src/python/twitter/common/lang',
+    'src/python/pants/BUILD.commons:twitter.common.collections',
+    'src/python/pants/BUILD.commons:twitter.common.contextutil',
+    'src/python/pants/BUILD.commons:twitter.common.lang',
   ]
 )

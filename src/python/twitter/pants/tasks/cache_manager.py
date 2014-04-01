@@ -1,28 +1,19 @@
-# ==================================================================================================
-# Copyright 2012 Twitter, Inc.
-# --------------------------------------------------------------------------------------------------
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this work except in compliance with the License.
-# You may obtain a copy of the License in the LICENSE file, or at:
-#
-#  http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# ==================================================================================================
+# Copyright 2014 Pants project contributors (see CONTRIBUTORS.md).
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+from __future__ import (nested_scopes, generators, division, absolute_import, with_statement,
+                        print_function, unicode_literals)
+
 
 try:
   import cPickle as pickle
 except ImportError:
   import pickle
 
-from twitter.pants.graph.build_graph import sort_targets
-from twitter.pants.base.build_invalidator import BuildInvalidator, CacheKeyGenerator
-from twitter.pants.base.target import Target
-from twitter.pants.targets.jar_library import JarLibrary
+from pants.graph.build_graph import sort_targets
+from pants.base.build_invalidator import BuildInvalidator, CacheKeyGenerator
+from pants.base.target import Target
+from pants.targets.jar_library import JarLibrary
 
 
 class VersionedTargetSet(object):
@@ -84,7 +75,7 @@ class VersionedTarget(VersionedTargetSet):
     # Must come after the assignments above, as they are used in the parent's __init__.
     VersionedTargetSet.__init__(self, cache_manager, [self])
     self.id = target.id
-  
+
 
 # The result of calling check() on a CacheManager.
 # Each member is a list of VersionedTargetSet objects in topological order.
@@ -240,4 +231,3 @@ class CacheManager(object):
 
   def _key_for(self, target, transitive=False):
     return self._cache_key_generator.key_for_target(target, transitive=transitive)
-

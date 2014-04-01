@@ -1,14 +1,17 @@
+# Copyright 2014 Pants project contributors (see CONTRIBUTORS.md).
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
+
 from __future__ import (nested_scopes, generators, division, absolute_import, with_statement,
                         print_function, unicode_literals)
 
+import logging
 from collections import defaultdict
 
 from twitter.common.collections import OrderedSet
 
-from twitter.pants.base.address import Address, SyntheticAddress
+from pants.base.address import Address, SyntheticAddress
 
 
-import logging
 logger = logging.getLogger(__name__)
 
 
@@ -119,7 +122,7 @@ class BuildGraph(object):
       _walk_rec(address)
 
   def transitive_subgraph_of_addresses(self, addresses, predicate=None):
-    ret = set() 
+    ret = set()
     self.walk_transitive_dependency_graph(addresses, ret.add, predicate=predicate)
     return ret
 
@@ -246,4 +249,3 @@ def coalesce_targets(targets, discriminator):
         current_type = discriminator(current_target)
 
   return sorted_targets
-

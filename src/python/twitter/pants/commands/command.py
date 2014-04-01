@@ -1,27 +1,16 @@
-# ==================================================================================================
-# Copyright 2011 Twitter, Inc.
-# --------------------------------------------------------------------------------------------------
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this work except in compliance with the License.
-# You may obtain a copy of the License in the LICENSE file, or at:
-#
-#  http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# ==================================================================================================
+# Copyright 2014 Pants project contributors (see CONTRIBUTORS.md).
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
 
-from __future__ import print_function
+from __future__ import (nested_scopes, generators, division, absolute_import, with_statement,
+                        print_function, unicode_literals)
 
 from twitter.common.collections import OrderedSet
-from twitter.pants.base.build_file import BuildFile
-from twitter.pants.base.build_file_parser import BuildFileParser
-from twitter.pants.base.config import Config
-from twitter.pants.base.target import Target
-from twitter.pants.graph.build_graph import BuildGraph
+
+from pants.base.build_file import BuildFile
+from pants.base.build_file_parser import BuildFileParser
+from pants.base.config import Config
+from pants.base.target import Target
+from pants.graph.build_graph import BuildGraph
 
 
 class Command(object):
@@ -70,7 +59,7 @@ class Command(object):
     # TODO(pl): Gross that we're doing a local import here, but this has dependendencies
     # way down into specific Target subclasses, and I'd prefer to make it explicit that this
     # import is in many ways similar to to third party plugin imports below.
-    from twitter.pants.base.build_file_aliases import (target_aliases, object_aliases,
+    from pants.base.build_file_aliases import (target_aliases, object_aliases,
                                                        applicative_path_relative_util_aliases,
                                                        partial_path_relative_util_aliases)
     for alias, target_type in target_aliases.items():

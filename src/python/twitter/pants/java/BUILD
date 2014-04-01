@@ -1,12 +1,15 @@
+# Copyright 2014 Pants project contributors (see CONTRIBUTORS.md).
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
+
 python_library(
   name = 'distribution',
   sources = globs('distribution/*.py'),
   resources = globs('distribution/*.class'),
   dependencies = [
-    'src/python/twitter/common/contextutil',
-    'src/python/twitter/common/lang',
-    'src/python/twitter/common/log',
-    'src/python/twitter/pants/base:revision',
+    'src/python/pants/BUILD.commons:twitter.common.contextutil',
+    'src/python/pants/BUILD.commons:twitter.common.lang',
+    'src/python/pants/BUILD.commons:twitter.common.log',
+    'src/python/pants/base:revision',
   ]
 )
 
@@ -15,10 +18,10 @@ python_library(
   sources = ['executor.py'],
   dependencies = [
     ':distribution',
-    'src/python/twitter/common/collections',
-    'src/python/twitter/common/contextutil',
-    'src/python/twitter/common/lang',
-    'src/python/twitter/common/log',
+    'src/python/pants/BUILD.commons:twitter.common.collections',
+    'src/python/pants/BUILD.commons:twitter.common.contextutil',
+    'src/python/pants/BUILD.commons:twitter.common.lang',
+    'src/python/pants/BUILD.commons:twitter.common.log',
   ]
 )
 
@@ -26,8 +29,8 @@ python_library(
   name = 'jar',
   sources = globs('jar/*.py'),
   dependencies = [
-    'src/python/twitter/common/contextutil',
-    'src/python/twitter/common/lang',
+    'src/python/pants/BUILD.commons:twitter.common.contextutil',
+    'src/python/pants/BUILD.commons:twitter.common.lang',
   ]
 )
 
@@ -42,11 +45,11 @@ python_library(
   dependencies = [
     '3rdparty/python:psutil',
     ':nailgun_client',
-    'src/python/twitter/common/collections',
-    'src/python/twitter/common/dirutil',
-    'src/python/twitter/common/lang',
-    'src/python/twitter/common/log',
-    'src/python/twitter/pants/base:build_environment',
+    'src/python/pants/BUILD.commons:twitter.common.collections',
+    'src/python/pants/BUILD.commons:twitter.common.dirutil',
+    'src/python/pants/BUILD.commons:twitter.common.lang',
+    'src/python/pants/BUILD.commons:twitter.common.log',
+    'src/python/pants/base:build_environment',
   ],
 )
 
@@ -56,7 +59,6 @@ python_library(
   dependencies = [
     ':executor',
     ':nailgun_executor',
-    'src/python/twitter/pants/base:workunit',
+    'src/python/pants/base:workunit',
   ],
 )
-

@@ -1,35 +1,24 @@
-# ==================================================================================================
-# Copyright 2013 Twitter, Inc.
-# --------------------------------------------------------------------------------------------------
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this work except in compliance with the License.
-# You may obtain a copy of the License in the LICENSE file, or at:
-#
-#  http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# ==================================================================================================
+# Copyright 2014 Pants project contributors (see CONTRIBUTORS.md).
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+from __future__ import (nested_scopes, generators, division, absolute_import, with_statement,
+                        print_function, unicode_literals)
 
 import os
-import pytest
-from textwrap import dedent
 import unittest
-
 from contextlib import contextmanager
+from textwrap import dedent
 
+import pytest
 from twitter.common.contextutil import pushd, temporary_dir
 from twitter.common.dirutil import touch
 
-from twitter.pants.base.address import BuildFileAddress, SyntheticAddress
-from twitter.pants.base.build_file import BuildFile
-from twitter.pants.base.build_file_parser import BuildFileParser
-from twitter.pants.base.build_environment import set_buildroot
-from twitter.pants.base.target import Target
-from twitter.pants.graph.build_graph import BuildGraph
+from pants.base.address import BuildFileAddress, SyntheticAddress
+from pants.base.build_environment import set_buildroot
+from pants.base.build_file import BuildFile
+from pants.base.build_file_parser import BuildFileParser
+from pants.base.target import Target
+from pants.graph.build_graph import BuildGraph
 
 
 class FakeTarget(Target):
@@ -215,4 +204,3 @@ class BuildFileParserTest(unittest.TestCase):
       self.assertRaises(AssertionError,
                         parser.populate_target_proxy_transitive_closure_for_spec,
                         ':base')
-
