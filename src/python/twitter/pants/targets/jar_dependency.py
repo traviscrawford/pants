@@ -19,6 +19,7 @@ from collections import defaultdict
 from twitter.common.collections import OrderedSet
 
 from twitter.pants.base.build_manual import manual
+from twitter.pants.base.payload import Payload
 from twitter.pants.base.target import AbstractTarget
 
 from .exclude import Exclude
@@ -70,7 +71,7 @@ class Artifact(object):
 
 
 @manual.builddict(tags=["jvm"])
-class JarDependency(ExternalDependency, AbstractTarget):
+class JarDependency(Payload):
   """A pre-built Maven repository dependency."""
 
   _JAR_HASH_KEYS = (
@@ -136,10 +137,6 @@ class JarDependency(ExternalDependency, AbstractTarget):
         self.declared_exclusives[k] |= exclusives[k]
 
   @property
-  def is_jar(self):
-    return True
-
-  @property
   def configurations(self):
     confs = OrderedSet(self._configurations)
     confs.update(artifact.conf for artifact in self.artifacts if artifact.conf)
@@ -191,11 +188,6 @@ class JarDependency(ExternalDependency, AbstractTarget):
     self._configurations.append('javadoc')
     return self
 
-  # TODO: This is necessary duck-typing because in some places JarDependency is treated like
-  # a Target, even though it doesn't extend Target. Probably best to fix that.
-  def has_label(self, label):
-    return False
-
   def with_artifact(self, name=None, type_=None, ext=None, url=None, configuration=None,
                     classifier=None):
     """Sets an alternative artifact to fetch or adds additional artifacts if called multiple times.
@@ -226,13 +218,3 @@ class JarDependency(ExternalDependency, AbstractTarget):
     key += ''.join(sorted(self._configurations))
     key += ''.join(a.cache_key() for a in sorted(self.artifacts, key=lambda a: a.name + a.type_))
     return key
-
-  def resolve(self):
-    yield self
-
-  def walk(self, work, predicate=None):
-    if not predicate or predicate(self):
-      work(self)
-
-  def _as_jar_dependencies(self):
-    yield self

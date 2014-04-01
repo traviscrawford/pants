@@ -25,8 +25,8 @@ from twitter.common import log
 from twitter.common.collections import OrderedSet
 from twitter.common.dirutil import safe_mkdir
 
+from twitter.pants.base.address import SyntheticAddress
 from twitter.pants.base.build_environment import get_buildroot
-from twitter.pants.targets.internal import InternalTarget
 from twitter.pants.targets.java_library import JavaLibrary
 from twitter.pants.targets.java_thrift_library import JavaThriftLibrary
 from twitter.pants.targets.python_library import PythonLibrary
@@ -82,6 +82,7 @@ class ThriftGen(CodeGen):
       or context.config.get('thrift-gen', 'workdir')
     )
     self.combined_dir = os.path.join(output_dir, 'combined')
+    self.combined_relpath = os.path.relpath(self.combined_dir, get_buildroot())
     self.session_dir = os.path.join(output_dir, 'sessions')
 
     self.strict = context.config.getbool('thrift-gen', 'strict')
@@ -190,22 +191,30 @@ class ThriftGen(CodeGen):
 
   def _create_java_target(self, target, dependees):
     def create_target(files, deps):
-       return self.context.add_new_target(os.path.join(self.combined_dir, 'gen-java'),
-                                          JavaLibrary,
-                                          name=target.id,
-                                          sources=files,
-                                          provides=target.provides,
-                                          dependencies=deps,
-                                          excludes=target.excludes)
+      spec_path = os.path.join(self.combined_relpath, 'gen-java')
+      name = '{target_name}.thrift_gen'.format(target_name=target.name)
+      spec = '{spec_path}:{name}'.format(spec_path=spec_path, name=name)
+      address = SyntheticAddress(spec=spec)
+      return self.context.add_new_target(address,
+                                         JavaLibrary,
+                                         derived_from=target,
+                                         sources=files,
+                                         provides=target.provides,
+                                         dependencies=deps,
+                                         excludes=target.payload.excludes)
     return self._inject_target(target, dependees, self.gen_java, 'java', create_target)
 
   def _create_python_target(self, target, dependees):
     def create_target(files, deps):
-     return self.context.add_new_target(os.path.join(self.combined_dir, 'gen-py'),
-                                        PythonLibrary,
-                                        name=target.id,
-                                        sources=files,
-                                        dependencies=deps)
+      spec_path = os.path.join(self.combined_relpath, 'gen-py')
+      name = '{target_name}.thrift_gen'.format(target_name=target.name)
+      spec = '{spec_path}:{name}'.format(spec_path=spec_path, name=name)
+      address = SyntheticAddress(spec=spec)
+      return self.context.add_new_target(address,
+                                         PythonLibrary,
+                                         derived_from=target,
+                                         sources=files,
+                                         dependencies=deps)
     return self._inject_target(target, dependees, self.gen_python, 'py', create_target)
 
   def _inject_target(self, target, dependees, geninfo, namespace, create_target):
@@ -217,14 +226,15 @@ class ThriftGen(CodeGen):
       files.extend(genfiles.get(namespace, []))
     deps = geninfo.deps['service' if has_service else 'structs']
     tgt = create_target(files, deps)
-    tgt.id = target.id + '.thrift_gen'
+    # tgt.id = target.id + '.thrift_gen'
     for dependee in dependees:
-      if isinstance(dependee, InternalTarget):
-        dependee.update_dependencies((tgt,))
-      else:
-        # TODO(John Sirois): rationalize targets with dependencies.
-        # JarLibrary or PythonTarget dependee on the thrift target
-        dependee.dependencies.add(tgt)
+      dependee.inject_dependency(tgt.address)
+      # if isinstance(dependee, InternalTarget):
+      #   dependee.update_dependencies((tgt,))
+      # else:
+      #   # TODO(John Sirois): rationalize targets with dependencies.
+      #   # JarLibrary or PythonTarget dependee on the thrift target
+      #   dependee.dependencies.add(tgt)
     return tgt
 
 

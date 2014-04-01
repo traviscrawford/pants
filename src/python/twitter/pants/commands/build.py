@@ -21,7 +21,7 @@ import traceback
 
 from twitter.common.collections import OrderedSet
 
-from twitter.pants.base.address import Address
+from twitter.pants.base.address import parse_spec
 from twitter.pants.base.config import Config
 from twitter.pants.base.target import Target
 from twitter.pants.commands.command import Command
@@ -80,7 +80,7 @@ class Build(Command):
     self.targets = OrderedSet()
     for spec in self.args[0:specs_end]:
       try:
-        address = Address.parse(root_dir, spec)
+        address = parse_spec(spec)
       except:
         self.error("Problem parsing spec %s: %s" % (spec, traceback.format_exc()))
 

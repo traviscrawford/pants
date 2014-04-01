@@ -7,7 +7,6 @@ from collections import defaultdict
 from copy import copy
 from twitter.pants.base.target import Target
 from twitter.pants.tasks import Task, TaskError
-from twitter.pants.targets.internal import InternalTarget
 
 
 class CheckExclusives(Task):
@@ -220,8 +219,7 @@ class ExclusivesMapping(object):
       t = workqueue.pop()
       if t not in all_targets:
         all_targets.add(t)
-        if isinstance(t, InternalTarget):
-          workqueue += t.dependencies
+        workqueue += t.dependencies
 
     for t in all_targets:
       key = self._get_exclusives_key(t)

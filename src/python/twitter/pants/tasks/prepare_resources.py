@@ -57,13 +57,16 @@ class PrepareResources(Task):
       for resources_tgt in invalid_targets:
         resources_dir = target_dir(resources_tgt)
         safe_mkdir(resources_dir, clean=True)
-        for resource_path in resources_tgt.sources:
-          basedir = os.path.dirname(resource_path)
+        relative_resource_dir = os.path.relpath(resources_tgt.address.spec_path,
+                                                resources_tgt.target_base)
+        for resource_path in resources_tgt.payload.resources:
+          full_resource_path = os.path.join(relative_resource_dir, resource_path)
+          basedir = os.path.dirname(full_resource_path)
           destdir = os.path.join(resources_dir, basedir)
           safe_mkdir(destdir)
           # TODO: Symlink instead?
-          shutil.copy(os.path.join(resources_tgt.target_base, resource_path),
-                      os.path.join(resources_dir, resource_path))
+          shutil.copy(os.path.join(resources_tgt.target_base, full_resource_path),
+                      os.path.join(resources_dir, full_resource_path))
 
       resources_by_target = self.context.products.get_data('resources_by_target')
       egroups = self.context.products.get_data('exclusives_groups')
@@ -75,4 +78,4 @@ class PrepareResources(Task):
           egroups.update_compatible_classpaths(group_key, [(conf, resources_dir)])
         if resources_by_target is not None:
           target_resources = resources_by_target[resources_tgt]
-          target_resources.add_rel_paths(resources_dir, resources_tgt.sources)
+          target_resources.add_rel_paths(resources_dir, resources_tgt.payload.resources)

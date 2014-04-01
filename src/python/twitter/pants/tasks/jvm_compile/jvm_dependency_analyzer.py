@@ -5,7 +5,7 @@ from collections import defaultdict
 from twitter.common.collections import OrderedSet
 
 from twitter.pants.base.build_environment import get_buildroot
-from twitter.pants.targets.internal import InternalTarget
+from twitter.pants.graph.build_graph import sort_targets
 from twitter.pants.targets.jar_dependency import JarDependency
 from twitter.pants.targets.jar_library import JarLibrary
 from twitter.pants.targets.jvm_target import JvmTarget
@@ -49,7 +49,7 @@ class JvmDependencyAnalyzer(object):
           for src in target.sources_relative_to_buildroot():
             targets_by_file[os.path.join(buildroot, src)].add(target)
         elif isinstance(target, JarLibrary):
-          for jardep in target.dependencies:
+          for jardep in target.jar_dependencies:
             if isinstance(jardep, JarDependency):
               jarlibs_by_id[(jardep.org, jardep.name)].add(target)
 
@@ -109,16 +109,15 @@ class JvmDependencyAnalyzer(object):
   def _compute_transitive_deps_by_target(self):
     """Map from target to all the targets it depends on, transitively."""
     # Sort from least to most dependent.
-    sorted_targets = reversed(InternalTarget.sort_targets(self._context.targets()))
+    sorted_targets = reversed(sort_targets(self._context.targets()))
     transitive_deps_by_target = defaultdict(set)
     # Iterate in dep order, to accumulate the transitive deps for each target.
     for target in sorted_targets:
       transitive_deps = set()
-      if hasattr(target, 'dependencies'):
-        for dep in target.dependencies:
-          transitive_deps.update(transitive_deps_by_target.get(dep, []))
-          transitive_deps.add(dep)
-        transitive_deps_by_target[target] = transitive_deps
+      for dep in target.dependencies:
+        transitive_deps.update(transitive_deps_by_target.get(dep, []))
+        transitive_deps.add(dep)
+      transitive_deps_by_target[target] = transitive_deps
     return transitive_deps_by_target
 
   def check(self, srcs, actual_deps):

@@ -56,7 +56,9 @@ class ProtobufGen(CodeGen):
     def resolve_deps(key):
       deps = OrderedSet()
       for dep in context.config.getlist('protobuf-gen', key):
-        deps.update(context.resolve(dep))
+        pass
+        # TODO(pl): Use BUILD.tools to do this
+        # deps.update(context.resolve(dep))
       return deps
 
     self.javadeps = resolve_deps('javadeps')

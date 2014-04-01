@@ -32,9 +32,10 @@ class ScalaCompile(JvmCompile):
 
     # If we are compiling scala libraries with circular deps on java libraries we need to
     # make sure those cycle deps are present.
-    for scala_target in self.context.targets(lambda t: isinstance(t, ScalaLibrary)):
-      for java_target in scala_target.java_sources:
-        self.context.add_target(java_target)
+    # TODO(pl): This is now defunct I think?
+    # for scala_target in self.context.targets(lambda t: isinstance(t, ScalaLibrary)):
+    #   for java_target in scala_target.java_sources:
+    #     self.context.add_target(java_target)
 
   def create_analysis_tools(self):
     return AnalysisTools(self.context, ZincAnalysisParser(self._classes_dir), ZincAnalysis)

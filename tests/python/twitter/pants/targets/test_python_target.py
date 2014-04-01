@@ -21,12 +21,12 @@ from textwrap import dedent
 
 from twitter.pants.base.parse_context import ParseContext
 from twitter.pants.base.target import TargetDefinitionException
+from twitter.pants.base.source_root import SourceRoot
 from twitter.pants.base_build_root_test import BaseBuildRootTest
 from twitter.pants.targets.artifact import Artifact
 from twitter.pants.targets.python_target import PythonTarget
 from twitter.pants.targets.python_artifact import PythonArtifact
 from twitter.pants.targets.repository import Repository
-from twitter.pants.targets.sources import SourceRoot
 
 
 class PythonTargetTest(BaseBuildRootTest):

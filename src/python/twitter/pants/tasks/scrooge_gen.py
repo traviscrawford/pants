@@ -27,7 +27,6 @@ from twitter.common.collections import OrderedSet
 from twitter.common.dirutil import safe_mkdir, safe_open
 
 from twitter.pants.base.build_environment import get_buildroot
-from twitter.pants.targets.internal import InternalTarget
 from twitter.pants.targets.java_library import JavaLibrary
 from twitter.pants.targets.java_thrift_library import JavaThriftLibrary
 from twitter.pants.targets.scala_library import ScalaLibrary
@@ -279,12 +278,7 @@ class ScroogeGen(NailgunTask):
     tgt.derived_from = target
     tgt.add_labels('codegen', 'synthetic')
     for dependee in dependees:
-      if isinstance(dependee, InternalTarget):
-        dependee.update_dependencies((tgt,))
-      else:
-        # TODO(John Sirois): rationalize targets with dependencies.
-        # JarLibrary or PythonTarget dependee on the thrift target
-        dependee.dependencies.add(tgt)
+      dependee.inject_dependency(tgt.address)
     return tgt
 
   def parse_gen_file_map(self, gen_file_map_path, outdir):

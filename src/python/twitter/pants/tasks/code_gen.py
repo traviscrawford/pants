@@ -67,17 +67,10 @@ class CodeGen(Task):
     raise NotImplementedError
 
   def getdependencies(self, gentarget):
-    # TODO(John Sirois): fix python/jvm dependencies handling to be uniform
-    if hasattr(gentarget, 'internal_dependencies'):
-      return gentarget.internal_dependencies
-    else:
-      return gentarget.dependencies
+    return gentarget.dependencies
 
   def updatedependencies(self, target, dependency):
-    if hasattr(target, 'update_dependencies'):
-      target.update_dependencies([dependency])
-    else:
-      target.dependencies.add(dependency)
+    target.inject_dependency(dependency.address)
 
   def execute(self, targets):
     gentargets = [t for t in targets if self.is_gentarget(t)]

@@ -21,7 +21,7 @@ from collections import defaultdict
 from twitter.common.lang import Compatibility
 from twitter.pants.base.build_environment import get_buildroot
 from twitter.pants.base.target import Target
-from twitter.pants.targets.sources import SourceRoot
+from twitter.pants.base.source_root import SourceRoot
 
 
 class TargetWithSources(Target):
@@ -47,8 +47,8 @@ class TargetWithSources(Target):
     files = []
 
     def _expand(target):
-      files.extend([os.path.abspath(os.path.join(target.target_base, s))
-          for s in (target.sources or [])])
+      files.extend([os.path.join(get_buildroot(), target.target_base, s)
+                   for s in (target.sources or [])])
       if include_buildfile:
         files.append(target.address.buildfile.full_path)
       if recursive:

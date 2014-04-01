@@ -3,8 +3,8 @@ import os
 from contextlib import contextmanager
 
 from twitter.pants.base.build_environment import get_buildroot
+from twitter.pants.base.source_root import SourceRoot
 from twitter.pants.base.target import Target
-from twitter.pants.targets.sources import SourceRoot
 from twitter.pants.tasks.roots import ListRoots
 from twitter.pants.tasks.test_base import ConsoleTaskTest
 
