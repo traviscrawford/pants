@@ -7,7 +7,6 @@ from __future__ import (nested_scopes, generators, division, absolute_import, wi
 import itertools
 import json
 import os
-import re
 from collections import defaultdict
 
 from pants.base.build_environment import get_buildroot

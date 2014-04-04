@@ -1,0 +1,493 @@
+format version: 4
+products:
+99 items
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$11$$anonfun$12$$anonfun$apply$8.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$11$$anonfun$12.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$11.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$13.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$14.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$15.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10$$anonfun$apply$11$$anonfun$apply$12.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10$$anonfun$apply$11.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$17$$anonfun$apply$13.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$17.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$18$$anonfun$apply$14.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$18.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$21.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$22.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$23.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$26.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$27.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$20.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29$$anonfun$apply$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29$$anonfun$apply$23.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$3$$anonfun$apply$3.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$3$$anonfun$apply$4.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$3.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$30.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$31.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$32.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$33.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$34.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$36.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$37.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$4$$anonfun$apply$5.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$4.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$7.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$8.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$9$$anonfun$10.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$9.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$addDataToJob$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$addDataToJob$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$15.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$16.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$17.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$copyJob$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$createOrUpdateJobWithAttributes$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$findActiveJobs$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24$$anonfun$35$$anonfun$apply$25.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24$$anonfun$35.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$26.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getResponseDataForAllUnits$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleJobComplete$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$24.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$25.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$makeArrayParam$1$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$makeParam$1$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$1$$anonfun$apply$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$3.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$4.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$5$$anonfun$apply$6.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$5.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$6$$anonfun$apply$7.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$6.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$6.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhotos$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhotos$2$$anonfun$19.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhotos$2$$anonfun$20.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhotos$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1$$anonfun$applyOrElse$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1$$anonfun$applyOrElse$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendGetRequest$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendGetRequest$default$3$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendPostRequest$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendPostRequest$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendPutRequest$1.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendPutRequest$2.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$PhotoAndWoesNeedingModeration$.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$PhotoAndWoesNeedingModeration.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$PhotoAndWoesNeedingReReview$.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$PhotoAndWoesNeedingReReview.class
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.class
+binary dependencies:
+17 items
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/common-thrift-json/jars/common-thrift-json-1.7.1.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/foursquare-fhttp_2.10/jars/foursquare-fhttp_2.10-0.1.11.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-core_2.10/jars/rogue-core_2.10-3.0.0-beta4.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-lift_2.10/jars/rogue-lift_2.10-3.0.0-beta4.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-spindle_2.10/jars/rogue-spindle_2.10-3.0.0-beta4.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/spindle-runtime_2.10/jars/spindle-runtime_2.10-1.7.1.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/finagle-core_2.10/jars/finagle-core_2.10-6.6.2.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/finagle-http_2.10/jars/finagle-http_2.10-6.6.2.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/util-core_2.10/jars/util-core_2.10-6.5.0.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/io.netty/netty/bundles/netty-3.7.0.Final.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/joda-time/joda-time/jars/joda-time-2.2_2013h.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/net.liftweb/lift-common_2.10/jars/lift-common_2.10-2.5.1-fs-a.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1-fs-a.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.apache.thrift/libthrift/jars/libthrift-0.9.0.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.mongodb/mongo-java-driver/jars/mongo-java-driver-2.11.3_fs-c.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> /Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.scalaj/scalaj-collection_2.10/jars/scalaj-collection_2.10-1.5.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+59 items
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.base.Bag
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.concurrent.Executors$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.concurrent.Futures$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.config.DynamicConfig
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.config.HasDynamicConfig
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.config.OptionalConfig
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.csv.CSVReaderUtils
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.csv.CSVReaderUtils$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.database.lift.service.HasLiftDatabaseService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.database.lift.service.LiftDatabaseService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.database.service.FutureDatabaseService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.database.service.HasDatabaseService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.database.service.HasFutureDatabaseService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.global.Application$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.instrumentation.Statmon$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.json.JsonQuery
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.json.JsonQuery$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.logging.MessageLogger
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.logging.MessageLogging
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.scala.FSIterable
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.scala.FSOption
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.scala.FSSeq
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.scala.Identity
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.scala.Identity$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.scala.Lists$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.thrift.ThriftConverter
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.thrift.ThriftConverter$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.future.service.HasFutureService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.ids.PhotoFK$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.ids.gen.IdsTypedefs$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.net.client.ConnectionType$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.net.client.FSHttpClient
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.net.client.FSHttpClient$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.model.Photo
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.model.Photo$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.model.PhotoRecord
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.model.PhotoWoe
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.model.PhotoWoe$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.model.gen.CrowdflowerPhotoModerationInfo
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.model.gen.CrowdflowerPhotoModerationInfo$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.model.gen.ThriftPhotoWoe$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.service.HasPhotoModerationActions
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.service.PhotoModerationActions
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.record.AbstractMongoForeignTypesafeId
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.record.ForeignTypesafeIdQueryField
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.record.LiftRogueExtensions
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.record.MongoEmbeddedThriftObjectField
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.record.RequiredMongoForeignTypesafeId
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.record.RogueImplicits$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.AllUnitsDataWrapper
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.CrowdflowerJob
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.CrowdflowerJob$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.CrowdflowerJobType
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.CrowdflowerJobType$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.PhotoModerationOption
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.PhotoModerationOption$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.SingleUnitInputData
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.gen.SingleUnitInputData$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.service.CrowdflowerService
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+9 items
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.base.Bag
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.config.HasDynamicConfig
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.database.lift.service.HasLiftDatabaseService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.database.service.HasDatabaseService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.database.service.HasFutureDatabaseService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.common.logging.MessageLogging
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.future.service.HasFutureService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.photo.service.HasPhotoModerationActions
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.service.CrowdflowerService
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+99 items
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$11
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$11$$anonfun$12
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$11$$anonfun$12$$anonfun$apply$8
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$13
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$14
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$15
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$16
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10$$anonfun$apply$11
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10$$anonfun$apply$11$$anonfun$apply$12
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$17
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$17$$anonfun$apply$13
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$18
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$18$$anonfun$apply$14
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$21
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$22
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$23
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$26
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$27
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$20
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29$$anonfun$apply$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29$$anonfun$apply$23
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$3
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$3$$anonfun$apply$3
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$3$$anonfun$apply$4
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$30
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$31
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$32
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$33
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$34
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$36
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$37
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$4
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$4$$anonfun$apply$5
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$7
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$8
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$9
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$9$$anonfun$10
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$addDataToJob$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$addDataToJob$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$15
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$16
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$17
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$copyJob$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$createOrUpdateJobWithAttributes$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$findActiveJobs$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24$$anonfun$35
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24$$anonfun$35$$anonfun$apply$25
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$26
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$getResponseDataForAllUnits$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$handleJobComplete$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$24
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$25
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$handleUnitComplete$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$makeArrayParam$1$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$makeParam$1$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$1$$anonfun$apply$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$3
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$4
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$5
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$5
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$5$$anonfun$apply$6
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$6
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$6$$anonfun$apply$7
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhoto$6
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhotos$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhotos$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhotos$2$$anonfun$19
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$moderatePhotos$2$$anonfun$20
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1$$anonfun$applyOrElse$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1$$anonfun$applyOrElse$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$sendGetRequest$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$sendGetRequest$default$3$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$sendPostRequest$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$sendPostRequest$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$sendPutRequest$1
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$$anonfun$sendPutRequest$2
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$PhotoAndWoesNeedingModeration
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$PhotoAndWoesNeedingModeration$
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$PhotoAndWoesNeedingReReview
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> com.foursquare.venue.crowdflower.concrete.ConcreteCrowdflowerService$PhotoAndWoesNeedingReReview$
+used names:
+0 items
+product stamps:
+99 items
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$11$$anonfun$12$$anonfun$apply$8.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$11$$anonfun$12.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$11.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$13.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$14.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$15.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10$$anonfun$apply$11$$anonfun$apply$12.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10$$anonfun$apply$11.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9$$anonfun$apply$10.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16$$anonfun$apply$9.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$16.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$17$$anonfun$apply$13.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$17.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$18$$anonfun$apply$14.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$18.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$21.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$22.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$23.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$26.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$27.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$20.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29$$anonfun$apply$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29$$anonfun$apply$23.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22$$anonfun$29.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21$$anonfun$apply$22.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19$$anonfun$apply$21.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18$$anonfun$apply$19.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28$$anonfun$apply$18.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$28.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$3$$anonfun$apply$3.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$3$$anonfun$apply$4.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$3.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$30.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$31.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$32.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$33.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$34.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$36.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$37.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$4$$anonfun$apply$5.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$4.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$7.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$8.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$9$$anonfun$10.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$9.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$addDataToJob$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$addDataToJob$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$15.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$16.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2$$anonfun$apply$17.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$com$foursquare$venue$crowdflower$concrete$ConcreteCrowdflowerService$$fetchCsvOrThrow$1$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$copyJob$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$createOrUpdateJobWithAttributes$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$findActiveJobs$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24$$anonfun$35$$anonfun$apply$25.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24$$anonfun$35.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$24.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1$$anonfun$apply$26.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getDataForAllUnits$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$getResponseDataForAllUnits$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleJobComplete$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$24.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1$$anonfun$25.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$handleUnitComplete$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$makeArrayParam$1$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$makeParam$1$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$1$$anonfun$apply$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$3.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$4.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$5$$anonfun$apply$6.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$5.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$6$$anonfun$apply$7.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5$$anonfun$6.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$5.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhoto$6.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhotos$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhotos$2$$anonfun$19.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhotos$2$$anonfun$20.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$moderatePhotos$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1$$anonfun$applyOrElse$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1$$anonfun$applyOrElse$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$retryFutureAtMost$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendGetRequest$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendGetRequest$default$3$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendPostRequest$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendPostRequest$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendPutRequest$1.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$$anonfun$sendPutRequest$2.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$PhotoAndWoesNeedingModeration$.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$PhotoAndWoesNeedingModeration.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$PhotoAndWoesNeedingReReview$.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService$PhotoAndWoesNeedingReReview.class -> lastModified(1395960917000)
+/Users/benjy/src/foursquare.web/.pants.d/scalac/classes/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.class -> lastModified(1395960917000)
+source stamps:
+1 items
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> hash(109509ac569d1f3cc64f5541bdd873da45e7ce50)
+binary stamps:
+17 items
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/common-thrift-json/jars/common-thrift-json-1.7.1.jar -> lastModified(1392933968000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/foursquare-fhttp_2.10/jars/foursquare-fhttp_2.10-0.1.11.jar -> lastModified(1382555792000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-core_2.10/jars/rogue-core_2.10-3.0.0-beta4.jar -> lastModified(1393192101000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-lift_2.10/jars/rogue-lift_2.10-3.0.0-beta4.jar -> lastModified(1393192117000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-spindle_2.10/jars/rogue-spindle_2.10-3.0.0-beta4.jar -> lastModified(1393192134000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/spindle-runtime_2.10/jars/spindle-runtime_2.10-1.7.1.jar -> lastModified(1392933965000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/finagle-core_2.10/jars/finagle-core_2.10-6.6.2.jar -> lastModified(1379379970000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/finagle-http_2.10/jars/finagle-http_2.10-6.6.2.jar -> lastModified(1379379869000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/util-core_2.10/jars/util-core_2.10-6.5.0.jar -> lastModified(1378843662000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/io.netty/netty/bundles/netty-3.7.0.Final.jar -> lastModified(1378391301000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/joda-time/joda-time/jars/joda-time-2.2_2013h.jar -> lastModified(1384542318000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/net.liftweb/lift-common_2.10/jars/lift-common_2.10-2.5.1-fs-a.jar -> lastModified(1389200133000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1-fs-a.jar -> lastModified(1389200068000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.apache.thrift/libthrift/jars/libthrift-0.9.0.jar -> lastModified(1350355397000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.mongodb/mongo-java-driver/jars/mongo-java-driver-2.11.3_fs-c.jar -> lastModified(1391198265000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar -> lastModified(1380275091000)
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.scalaj/scalaj-collection_2.10/jars/scalaj-collection_2.10-1.5.jar -> lastModified(1373731175000)
+class names:
+17 items
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/common-thrift-json/jars/common-thrift-json-1.7.1.jar -> com.foursquare.common.thrift.json.TReadableJSONProtocol
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/foursquare-fhttp_2.10/jars/foursquare-fhttp_2.10-0.1.11.jar -> com.foursquare.fhttp.FHttpClient
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-core_2.10/jars/rogue-core_2.10-3.0.0-beta4.jar -> com.foursquare.rogue.BSONType$
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-lift_2.10/jars/rogue-lift_2.10-3.0.0-beta4.jar -> com.foursquare.rogue.lift.ObjectIdKey
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/rogue-spindle_2.10/jars/rogue-spindle_2.10-3.0.0-beta4.jar -> com.foursquare.rogue.spindle.SpindleRogue
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.foursquare/spindle-runtime_2.10/jars/spindle-runtime_2.10-1.7.1.jar -> com.foursquare.spindle.EnumMeta
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/finagle-core_2.10/jars/finagle-core_2.10-6.6.2.jar -> com.twitter.finagle.Service
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/finagle-http_2.10/jars/finagle-http_2.10-6.6.2.jar -> com.twitter.finagle.http.RequestBuilder
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/com.twitter/util-core_2.10/jars/util-core_2.10-6.5.0.jar -> com.twitter.util.Time
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/io.netty/netty/bundles/netty-3.7.0.Final.jar -> org.jboss.netty.handler.codec.http.HttpMessage
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/joda-time/joda-time/jars/joda-time-2.2_2013h.jar -> org.joda.time.DateTime
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/net.liftweb/lift-common_2.10/jars/lift-common_2.10-2.5.1-fs-a.jar -> net.liftweb.common.Box
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1-fs-a.jar -> net.liftweb.json.JsonAST$
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.apache.thrift/libthrift/jars/libthrift-0.9.0.jar -> org.apache.thrift.TBase
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.mongodb/mongo-java-driver/jars/mongo-java-driver-2.11.3_fs-c.jar -> org.bson.types.ObjectId
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar -> scala.runtime.AbstractFunction3
+/Users/benjy/src/foursquare.web/.pants.d/classpath/jars/org.scalaj/scalaj-collection_2.10/jars/scalaj-collection_2.10-1.5.jar -> scalaj.collection.j2s.RichList
+internal apis:
+1 items
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDqbtJfAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdABEY29tLmZvdXJzcXVhcmUudmVudWUuY3Jvd2RmbG93ZXIuY29uY3JldGUuQ29uY3JldGVDcm93ZGZsb3dlclNlcnZpY2V1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AC94cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AC4AcHNxAH4AM3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADdzcQB+AC4AcHNxAH4AM3VxAH4AEAAAAABzcQB+AC4AcHNxAH4AM3VxAH4AEAAAAABzcQB+AC4AcHNxAH4AM3VyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAEc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANnQADk1lc3NhZ2VMb2dnaW5nc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA2c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAAFc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AANjb21zcQB+AFN0AApmb3Vyc3F1YXJlc3EAfgBTdAAGY29tbW9uc3EAfgBTdAAHbG9nZ2luZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBUc3EAfgBHdAASQ3Jvd2RmbG93ZXJTZXJ2aWNlc3EAfgBLc3EAfgBOdXEAfgBRAAAABnNxAH4AU3QAA2NvbXNxAH4AU3QACmZvdXJzcXVhcmVzcQB+AFN0AAV2ZW51ZXNxAH4AU3QAC2Nyb3dkZmxvd2Vyc3EAfgBTdAAHc2VydmljZXEAfgBec3EAfgBHdAAGT2JqZWN0c3EAfgBLc3EAfgBOdXEAfgBRAAAAA3NxAH4AU3QABGphdmFzcQB+AFN0AARsYW5ncQB+AF5zcQB+AEd0AANBbnlzcQB+AEtzcQB+AE51cQB+AFEAAAACc3EAfgBTdAAFc2NhbGFxAH4AXnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAFc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+ABx4cHQADmNvbS5mb3Vyc3F1YXJlc3EAfgCAdAAgY29tLmZvdXJzcXVhcmUudmVudWUuY3Jvd2RmbG93ZXJzcQB+AIB0AANjb21zcQB+AIB0ACljb20uZm91cnNxdWFyZS52ZW51ZS5jcm93ZGZsb3dlci5jb25jcmV0ZXNxAH4AgHQAFGNvbS5mb3Vyc3F1YXJlLnZlbnVlc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFFBb6XbXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AGkvZXhwb3J0L2hkYjMvZGF0YS9hcHBkYXRhL2plbmtpbnMvd29ya3NwYWNlL21pc2MuYnVpbGQvQlVJTERfU1RFUC9mdW5jdGlvbmFsLXRlc3QvLnBhbnRzLmQvc2NhbGFjL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQQlQmsVp0fPMZPVUG92HPaRefOUA==
+external apis:
+0 items
+source infos:
+1 items
+/Users/benjy/src/foursquare.web/src/jvm/com/foursquare/venue/crowdflower/concrete/ConcreteCrowdflowerService.scala -> 
+AAAAAAAAAAA=
+compilations:
+0 items
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/benjy/src/foursquare.web/.pants.d/scalac/classes
+compile options:
+15 items
+00 -> -encoding
+01 -> UTF-8
+02 -> -deprecation
+03 -> -unchecked
+04 -> -feature
+05 -> -Xfatal-warnings
+06 -> -g:vars
+07 -> -language:existentials
+08 -> -language:implicitConversions
+09 -> -language:reflectiveCalls
+10 -> -language:postfixOps
+11 -> -language:higherKinds
+12 -> -Xplugin:.pants.d/classpath/jars/com.foursquare/i18n-plugin_2.10/jars/i18n-plugin_2.10-1.0.14.jar
+13 -> -P:i18n:file=src/resources/translations/api.txt
+14 -> -Xplugin:.pants.d/classpath/jars/com.foursquare/lint_2.10/jars/lint_2.10-0.0.4.jar
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.10.3
+compile order:
+1 items
+0 -> Mixed
