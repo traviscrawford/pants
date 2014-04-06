@@ -65,6 +65,20 @@ class ZincAnalysisElement(object):
       outfile.write(item)
       outfile.write('\n')
 
+  def anonymize_keys(self, anonymizer, arg):
+    for k, vals in arg.iteritems():
+      arg[anonymizer.convert(k)] = vals
+      del arg[k]
+
+  def anonymize_values(self, anonymizer, arg):
+    for k, vals in arg.iteritems():
+      arg[k] = [anonymizer.convert(v) for v in vals]
+
+  def anonymize_keys_and_values(self, anonymizer, arg):
+    for k, vals in arg.iteritems():
+      arg[anonymizer.convert(k)] = [anonymizer.convert(v) for v in vals]
+      del arg[k]
+
 
 class ZincAnalysis(Analysis):
   """Parsed representation of a zinc analysis.
@@ -284,6 +298,11 @@ class ZincAnalysis(Analysis):
     self.compilations.write(outfile, inline_vals=True, rebasings=rebasings)
     self.compile_setup.write(outfile, inline_vals=True, rebasings=rebasings)
 
+  def anonymize(self, anonymizer):
+    for element in [self.relations, self.stamps, self.apis, self.source_infos,
+                    self.compilations, self.compile_setup]:
+      element.anonymize(anonymizer)
+
   # Extra methods re json.
 
   def write_json_to_path(self, outfile_path):
@@ -330,6 +349,10 @@ class Relations(ZincAnalysisElement):
      self.inheritance_internal_dep, self.inheritance_external_dep,
      self.classes, self.used) = self.args
 
+  def anonymize(self, anonymizer):
+    for a in self.args:
+      self.anonymize_keys_and_values(anonymizer, a)
+
 
 class Stamps(ZincAnalysisElement):
   headers = ('product stamps', 'source stamps', 'binary stamps', 'class names')
@@ -337,6 +360,11 @@ class Stamps(ZincAnalysisElement):
   def __init__(self, args):
     super(Stamps, self).__init__(args)
     (self.products, self.sources, self.binaries, self.classnames) = self.args
+
+  def anonymize(self, anonymizer):
+    for a in [self.products, self.sources, self.binaries]:
+      self.anonymize_keys(anonymizer, a)
+    self.anonymize_keys_and_values(anonymizer, self.classnames)
 
 
 class APIs(ZincAnalysisElement):
@@ -346,6 +374,10 @@ class APIs(ZincAnalysisElement):
     super(APIs, self).__init__(args)
     (self.internal, self.external) = self.args
 
+  def anonymize(self, anonymizer):
+    for a in self.args:
+      self.anonymize_keys(anonymizer, a)
+
 
 class SourceInfos(ZincAnalysisElement):
   headers = ("source infos", )
@@ -354,6 +386,10 @@ class SourceInfos(ZincAnalysisElement):
     super(SourceInfos, self).__init__(args)
     (self.source_infos, ) = self.args
 
+  def anonymize(self, anonymizer):
+    for a in self.args:
+      self.anonymize_keys(anonymizer, a)
+
 
 class Compilations(ZincAnalysisElement):
   headers = ('compilations', )
@@ -361,6 +397,9 @@ class Compilations(ZincAnalysisElement):
   def __init__(self, args):
     super(Compilations, self).__init__(args)
     (self.compilations, ) = self.args
+
+  def anonymize(self, anonymizer):
+    pass
 
 
 class CompileSetup(ZincAnalysisElement):
@@ -371,6 +410,9 @@ class CompileSetup(ZincAnalysisElement):
     super(CompileSetup, self).__init__(args)
     (self.output_mode, self.output_dirs, self.compile_options, self.javac_options,
      self.compiler_version, self.compile_order) = self.args
+
+  def anonymize(self, anonymizer):
+    self.anonymize_values(anonymizer, self.output_dirs)
 
 
 class ZincAnalysisJSONEncoder(json.JSONEncoder):
