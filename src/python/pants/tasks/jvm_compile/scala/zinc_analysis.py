@@ -11,6 +11,7 @@ from collections import defaultdict
 
 from pants.base.build_environment import get_buildroot
 from pants.tasks.jvm_compile.analysis import Analysis
+from pants.tasks.jvm_compile.anonymizer import Anonymizer
 
 
 class ZincAnalysisElement(object):
@@ -66,18 +67,25 @@ class ZincAnalysisElement(object):
       outfile.write('\n')
 
   def anonymize_keys(self, anonymizer, arg):
-    for k, vals in arg.iteritems():
-      arg[anonymizer.convert(k)] = vals
+    old_keys = list(arg.keys())
+    for k in old_keys:
+      vals = arg[k]
       del arg[k]
+      arg[anonymizer.convert(k)] = vals
 
   def anonymize_values(self, anonymizer, arg):
     for k, vals in arg.iteritems():
       arg[k] = [anonymizer.convert(v) for v in vals]
 
-  def anonymize_keys_and_values(self, anonymizer, arg):
+  def anonymize_base64_values(self, anonymizer, arg):
+    def random_base64_string(s):
+      if s == 'AAAAAAAAAAA=':  # Leave empty objects untouched.
+        return s
+      else:
+        return Anonymizer.random_base64_string()
+
     for k, vals in arg.iteritems():
-      arg[anonymizer.convert(k)] = [anonymizer.convert(v) for v in vals]
-      del arg[k]
+      arg[k] = [random_base64_string(v) for v in vals]
 
 
 class ZincAnalysis(Analysis):
@@ -298,13 +306,18 @@ class ZincAnalysis(Analysis):
     self.compilations.write(outfile, inline_vals=True, rebasings=rebasings)
     self.compile_setup.write(outfile, inline_vals=True, rebasings=rebasings)
 
+  # Extra methods on this class only.
+
+  # Anonymize the contents of this analysis. Useful for creating test data.
+  # Note that the resulting file is not a valid analysis, as the base64-encoded serialized objects
+  # will be replaced with random base64 strings. So these are useful for testing analysis parsing,
+  # splitting and merging, but not for actually reading into Zinc.
   def anonymize(self, anonymizer):
     for element in [self.relations, self.stamps, self.apis, self.source_infos,
                     self.compilations, self.compile_setup]:
       element.anonymize(anonymizer)
 
-  # Extra methods re json.
-
+  # Write this analysis to JSON.
   def write_json_to_path(self, outfile_path):
     with open(outfile_path, 'w') as outfile:
       self.write_json(outfile)
@@ -351,7 +364,8 @@ class Relations(ZincAnalysisElement):
 
   def anonymize(self, anonymizer):
     for a in self.args:
-      self.anonymize_keys_and_values(anonymizer, a)
+      self.anonymize_values(anonymizer, a)
+      self.anonymize_keys(anonymizer, a)
 
 
 class Stamps(ZincAnalysisElement):
@@ -362,9 +376,9 @@ class Stamps(ZincAnalysisElement):
     (self.products, self.sources, self.binaries, self.classnames) = self.args
 
   def anonymize(self, anonymizer):
-    for a in [self.products, self.sources, self.binaries]:
+    for a in self.args:
       self.anonymize_keys(anonymizer, a)
-    self.anonymize_keys_and_values(anonymizer, self.classnames)
+    self.anonymize_values(anonymizer, self.classnames)
 
 
 class APIs(ZincAnalysisElement):
@@ -376,6 +390,7 @@ class APIs(ZincAnalysisElement):
 
   def anonymize(self, anonymizer):
     for a in self.args:
+      self.anonymize_base64_values(anonymizer, a)
       self.anonymize_keys(anonymizer, a)
 
 
@@ -388,6 +403,7 @@ class SourceInfos(ZincAnalysisElement):
 
   def anonymize(self, anonymizer):
     for a in self.args:
+      self.anonymize_base64_values(anonymizer, a)
       self.anonymize_keys(anonymizer, a)
 
 
@@ -413,6 +429,11 @@ class CompileSetup(ZincAnalysisElement):
 
   def anonymize(self, anonymizer):
     self.anonymize_values(anonymizer, self.output_dirs)
+    for k, vs in list(self.compile_options.items()):  # Make a copy, so we can del as we go.
+      # Remove mentions of custom plugins.
+      for v in vs:
+        if v.startswith('-Xplugin') or v.startswith('-P'):
+          del self.compile_options[k]
 
 
 class ZincAnalysisJSONEncoder(json.JSONEncoder):

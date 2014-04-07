@@ -4,29 +4,41 @@
 from __future__ import (nested_scopes, generators, division, absolute_import, with_statement,
                         print_function, unicode_literals)
 
+import base64
+import os
 import random
 import re
 
 
-_default_keep = [
-  'com',
-  'src',
-  'home',
-  'Users',
-  'java',
-  'javac',
-  'scala',
-  'scalac',
-  'class',
-  'classes',
+_default_keep_words = [
   'anonfun',
   'apply',
-  'unapply',
-  'pants',
+  'beta',
+  'class',
+  'classes',
+  'com',
   'd',
+  'home',
+  'jar',
   'jars',
-  'jar'
+  'java',
+  'javac',
+  'lib',
+  'library',
+  'pants',
+  'rt',
+  'scala',
+  'scalac',
+  'src',
+  'unapply',
+  'users',
+  'web'
 ]
+
+_default_word_map = {
+  'foursquare': 'acme',
+  'benjy': 'kermit'
+}
 
 # TODO: Move somewhere more general? Could also be used to anonymize source files.
 
@@ -41,9 +53,17 @@ class Anonymizer(object):
   Useful for obfuscating real-life analysis files so we can use them in tests without
   leaking proprietary information.
   """
-  # Break on delimiters (digits, space, forward slash, dollar, period) and on
+
+  # Utility method for anonymizing base64-encoded binary data in analysis files.
+  @staticmethod
+  def random_base64_string():
+    n = random.randint(0, 200)
+    return base64.b64encode(os.urandom(n))
+
+
+  # Break on delimiters (digits, space, forward slash, dash, underscore, dollar, period) and on
   # upper-case letters.
-  _DELIMITER = r'\d|\s|/|\$|\.'
+  _DELIMITER = r'\d|\s|/|-|_|\$|\.'
   _UPPER = r'[A-Z]'
   _UPPER_CASE_RE = re.compile(r'^%s$' % _UPPER)
   _DELIMITER_RE = re.compile(r'^%s$' % _DELIMITER)
@@ -52,11 +72,14 @@ class Anonymizer(object):
   # Valid replacement words must be all lower-case letters, with no apostrophes etc.
   _WORD_RE = re.compile(r'^[a-z]+$')
 
-  def __init__(self, word_map, word_list, keep=None):
-    self._conversions = dict(word_map)
-    for w in _default_keep if keep is None else keep:
+  def __init__(self, word_list, word_map=None, keep=None):
+    self._conversions = dict(_default_word_map if word_map is None else word_map)
+    for w in _default_keep_words if keep is None else keep:
       self._conversions[w] = w
-    self._unused_words = list(set(filter(lambda s: Anonymizer._WORD_RE.match(s), word_list)))
+    self._unused_words = list(
+      set(filter(lambda s: Anonymizer._WORD_RE.match(s), word_list)) -
+      set(self._conversions.values()) -
+      set(self._conversions.keys()))
     random.shuffle(self._unused_words)
 
   def convert(self, s):
