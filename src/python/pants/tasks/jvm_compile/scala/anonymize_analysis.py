@@ -4,6 +4,8 @@
 from __future__ import (nested_scopes, generators, division, absolute_import, with_statement,
                         print_function, unicode_literals)
 
+import glob
+import itertools
 import sys
 
 from pants.tasks.jvm_compile.anonymizer import Anonymizer
@@ -22,7 +24,7 @@ def main():
   """
   word_file = sys.argv[1]
   classes_dir = sys.argv[2]
-  analysis_files = sys.argv[3:]
+  analysis_files = list(itertools.chain.from_iterable([glob.glob(p) for p in sys.argv[3:]]))
 
   with open(word_file, 'r') as infile:
     word_list = infile.read().split()
