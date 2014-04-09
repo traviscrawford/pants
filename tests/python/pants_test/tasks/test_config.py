@@ -8,7 +8,7 @@ import unittest
 
 from twitter.common.contextutil import temporary_file
 
-from pants.base.config import Config
+from pants.base.config import Config, ConfigOption
 
 
 class ConfigTest(unittest.TestCase):
@@ -56,7 +56,11 @@ that.''',
 
 
   def test_getint(self):
-    self.assertEquals(42, self.config.getint('a', 'answer'))
+    self.assertEquals(42, self.config.get_option(ConfigOption.create(
+      section='a',
+      option='answer',
+      help='Test int option.',
+      valtype=int)))
     self.checkDefaults(self.config.get, 42)
 
 

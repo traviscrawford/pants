@@ -13,7 +13,7 @@ from twitter.common.contextutil import temporary_file
 from twitter.common.dirutil import safe_delete, touch
 from twitter.common.quantity import Amount, Time
 
-from pants.base.config import Config
+from pants.base.config import Config, ConfigOption
 from pants.ivy.ivy import Ivy
 from pants.net.http.fetcher import Fetcher
 
@@ -54,6 +54,13 @@ class Bootstrapper(object):
 
   _INSTANCE = None
 
+  _IVY_BOOTSTRAP_FETCH_TIMEOUT_SECS = ConfigOption.create(
+    section='ivy',
+    option='bootstrap_fetch_timeout_secs',
+    help='Timeout in seconds for fetching Ivy during bootstrapping.',
+    valtype=int,
+    default=1)
+
   @classmethod
   def instance(cls):
     """Returns the default global ivy bootstrapper."""
@@ -80,7 +87,7 @@ class Bootstrapper(object):
     self._config = Config.load()
     self._bootstrap_jar_url = self._config.get('ivy', 'bootstrap_jar_url',
                                                default=self._DEFAULT_URL)
-    self._timeout = Amount(self._config.getint('ivy', 'bootstrap_fetch_timeout_secs', default=1),
+    self._timeout = Amount(self._config.get_option(self._IVY_BOOTSTRAP_FETCH_TIMEOUT_SECS),
                            Time.SECONDS)
     self._version_or_ivyxml = self._config.get('ivy', 'ivy_profile', default=self._DEFAULT_VERSION)
     self._classpath = None

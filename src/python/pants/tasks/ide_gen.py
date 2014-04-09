@@ -13,6 +13,7 @@ from twitter.common.dirutil import safe_mkdir
 
 from pants import binary_util
 from pants.base.build_environment import get_buildroot
+from pants.base.config import ConfigOption
 from pants.base.target import Target
 from pants.goal.phase import Phase
 from pants.targets.jvm_binary import JvmBinary
@@ -37,6 +38,13 @@ def is_java(target):
 
 
 class IdeGen(JvmBinaryTask):
+  _IDE_DEBUG_PORT = ConfigOption.create(
+    section='ide',
+    option='debug_port',
+    help='Port generated project will use in remote debug run configuration.',
+    valtype=int,
+    default=5005)
+
   @classmethod
   def setup_parser(cls, option_group, args, mkflag):
     option_group.add_option(mkflag("project-name"), dest="ide_gen_project_name", default="project",
@@ -113,7 +121,7 @@ class IdeGen(JvmBinaryTask):
     self.checkstyle_suppression_files = context.config.getdefault(
       'checkstyle_suppression_files', type=list, default=[]
     )
-    self.debug_port = context.config.getint('ide', 'debug_port')
+    self.debug_port = context.config.get_option(self._IDE_DEBUG_PORT)
 
     self.checkstyle_bootstrap_key = 'checkstyle'
     checkstyle = context.config.getlist('checkstyle', 'bootstrap-tools',
