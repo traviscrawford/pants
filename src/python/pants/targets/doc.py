@@ -5,6 +5,7 @@ from __future__ import (nested_scopes, generators, division, absolute_import, wi
                         print_function, unicode_literals)
 
 from pants.base.build_manual import manual
+from pants.base.payload import ResourcesPayload
 from pants.base.target import Target
 
 
@@ -25,7 +26,7 @@ class Wiki(Target):
 class Page(Target):
   """Describes a single documentation page."""
 
-  def __init__(self, resources=None, **kwargs):
+  def __init__(self, source, resources=None, **kwargs):
     """
     :param string name: The name of this target, which combined with this
       build file defines the target :class:`pants.base.address.Address`.
@@ -35,16 +36,13 @@ class Page(Target):
     :type dependencies: list of targets
     :param resources: An optional list of Resources objects.
     """
-
-    payload = None
-    super(Page, self).__init__(**kwargs)
-
+    super(Page, self).__init__(payload=ResourcesPayload(sources=list(source)), **kwargs)
     self.resources = self._resolve_paths(resources) if resources else []
     self._wikis = {}
 
   @property
   def source(self):
-    return self.sources[0]
+    return self.payload.sources[0]
 
   @manual.builddict()
   def register_wiki(self, wiki, **kwargs):
