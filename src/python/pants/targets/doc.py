@@ -4,9 +4,14 @@
 from __future__ import (nested_scopes, generators, division, absolute_import, with_statement,
                         print_function, unicode_literals)
 
-from pants.base.build_manual import manual
 from pants.base.payload import ResourcesPayload
 from pants.base.target import Target
+
+
+class WikiArtifact(object):
+  def __init__(self, wiki, **kwargs):
+    self.wiki = wiki
+    self.config = kwargs
 
 
 class Wiki(Target):
@@ -24,9 +29,22 @@ class Wiki(Target):
 
 
 class Page(Target):
-  """Describes a single documentation page."""
+  """Describes a single documentation page.
 
-  def __init__(self, source, resources=None, **kwargs):
+  Example: ::
+
+     page(name='mypage',
+       source='mypage.md',
+       provides=[
+         wiki_artifact(wiki='address/of/my/wiki',
+                      space='my_space',
+                      title='my_page',
+                      parent='my_parent'),
+       ],
+     )
+  """
+
+  def __init__(self, source, resources=None, provides=None, **kwargs):
     """
     :param string name: The name of this target, which combined with this
       build file defines the target :class:`pants.base.address.Address`.
@@ -36,30 +54,13 @@ class Page(Target):
     :type dependencies: list of targets
     :param resources: An optional list of Resources objects.
     """
-    super(Page, self).__init__(payload=ResourcesPayload(sources=list(source)), **kwargs)
+    super(Page, self).__init__(
+      payload=ResourcesPayload(sources_rel_path=kwargs.get('address').spec_path,
+                               sources=[source]),
+      **kwargs)
     self.resources = self._resolve_paths(resources) if resources else []
-    self._wikis = {}
+    self.provides = provides
 
   @property
   def source(self):
-    return self.payload.sources[0]
-
-  @manual.builddict()
-  def register_wiki(self, wiki, **kwargs):
-    """Adds this page to the given wiki for publishing.  Wiki-specific configuration is passed as
-    kwargs.
-    """
-    if isinstance(wiki, Pants):
-      wiki = wiki.get()
-    if not isinstance(wiki, Wiki):
-      raise ValueError('The 1st argument must be a wiki target, given: %s' % wiki)
-    self._wikis[wiki] = kwargs
-    return self
-
-  def wiki_config(self, wiki):
-    """Gets the wiki specific config for the given wiki if present or else returns None."""
-    return self._wikis.get(wiki)
-
-  def wikis(self):
-    """Returns all the wikis registered with this page."""
-    return self._wikis.keys()
+    return list(self.payload.sources)[0]

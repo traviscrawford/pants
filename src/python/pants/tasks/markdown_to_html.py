@@ -130,7 +130,7 @@ class MarkdownToHtml(Task):
         def process_page(key, outdir, url_builder, config, genmap, fragment=False):
           html_path = self.process(
             outdir,
-            page.target_base,
+            page.payload.sources_rel_path,
             page.source,
             self.fragment or fragment,
             url_builder,
@@ -153,11 +153,11 @@ class MarkdownToHtml(Task):
         if self.open and page in roots:
           show.append(html)
 
-        for wiki in page.wikis():
+        for wiki in page.provides:
           def get_config(page):
-            return page.wiki_config(wiki)
-          basedir = os.path.join(self.workdir, wiki.id)
-          process_page((wiki, page), basedir, wiki.url_builder, get_config,
+            return page.config(wiki)
+          basedir = os.path.join(self.workdir, str(hash(wiki)))
+          process_page((wiki, page), basedir, wiki.wiki.url_builder, get_config,
                        wikigenmap, fragment=True)
 
     if show:

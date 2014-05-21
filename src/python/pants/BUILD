@@ -33,9 +33,44 @@ python_library(
   )
 )
 
+import urllib
+
+from pants.tasks.confluence_publish import ConfluencePublish
+
+
+def confluence_url_builder(page, config):
+  title = config['title']
+  return title, 'https://confluence.twitter.biz/display/%s/%s' % ( 
+    config['space'],
+    urllib.quote_plus(title)
+  )
+confluence = wiki(name='confluence',
+                        url_builder=confluence_url_builder)
+
+class TwitterConfluence(ConfluencePublish):
+  def wiki(self):
+    return confluence
+  def api(self):
+    return 'confluence2'
+
+goal(
+  name='confluence',
+  action=TwitterConfluence,
+  dependencies=['markdown']
+).install().with_description('Publish one or more confluence pages.')
+
+
 page(name='readme',
   source='README.md',
+  provides=[
+    wiki_artifact(
+      wiki=pants(':confluence'),
+      space='~travis',
+      title='test_page',
+    ),
+  ],
 )
+
 
 # XXX move into base or thrift
 python_library(

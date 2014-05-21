@@ -11,7 +11,7 @@ from pants.targets.artifact import Artifact
 from pants.targets.benchmark import Benchmark
 from pants.targets.credentials import Credentials
 from pants.targets.dependencies import Dependencies
-from pants.targets.doc import Page, Wiki
+from pants.targets.doc import Page, Wiki, WikiArtifact
 from pants.targets.jar_dependency import JarDependency
 from pants.targets.jar_library import JarLibrary
 from pants.targets.java_agent import JavaAgent
@@ -93,6 +93,7 @@ object_aliases = {
   'exclude': Exclude,
   'python_artifact': PythonArtifact,
   'setup_py': PythonArtifact,
+  'wiki_artifact': WikiArtifact,
   'Amount': Amount,
   'Time': Time,
 }
