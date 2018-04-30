@@ -19,5 +19,4 @@ python_app(
   bundles=[
     bundle(fileset=globs('BUILD')),
   ],
-  archive='tgz',
 )
